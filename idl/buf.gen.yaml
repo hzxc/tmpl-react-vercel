@@ -1,0 +1,12 @@
+version: v1
+plugins:
+  - remote: buf.build/timostamm/plugins/protobuf-ts:v2.7.0-1
+    out: ../src/gen/ts
+    opt:
+      - generate_dependencies
+      - server_none
+      - optimize_code_size
+      - client_generic
+      - output_typescript
+      - long_type_string
+      - eslint_disable
