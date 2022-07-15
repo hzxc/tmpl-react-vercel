@@ -22,13 +22,21 @@ export interface LoginRequest {
  */
 export interface LoginResponse {
     /**
-     * @generated from protobuf field: string access_token = 1;
+     * @generated from protobuf field: int64 id = 1;
      */
-    accessToken: string;
+    id: string;
     /**
-     * @generated from protobuf field: int32 expires_in = 2;
+     * @generated from protobuf field: string name = 2;
      */
-    expiresIn: number;
+    name: string;
+    /**
+     * @generated from protobuf field: string token = 3;
+     */
+    token: string;
+    /**
+     * @generated from protobuf field: int64 expires_at = 4;
+     */
+    expiresAt: string;
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class LoginRequest$Type extends MessageType<LoginRequest> {
@@ -47,8 +55,10 @@ export const LoginRequest = new LoginRequest$Type();
 class LoginResponse$Type extends MessageType<LoginResponse> {
     constructor() {
         super("api.auth.v1.LoginResponse", [
-            { no: 1, name: "access_token", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 2, name: "expires_in", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+            { no: 1, name: "id", kind: "scalar", T: 3 /*ScalarType.INT64*/ },
+            { no: 2, name: "name", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "token", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "expires_at", kind: "scalar", T: 3 /*ScalarType.INT64*/ }
         ]);
     }
 }

@@ -24,14 +24,12 @@ const bootstrapUser = async () => {
     const data = await http('HelloService', 'me', {
       token,
     });
-    user = data.user;
+    user = data;
   }
   return user;
 };
 
-const AuthContext = React.createContext<AuthContextProps | undefined>(
-  undefined
-);
+const AuthContext = React.createContext<AuthContextProps | undefined>(undefined);
 AuthContext.displayName = 'AuthContext';
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
@@ -54,7 +52,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     run(bootstrapUser());
-  });
+  }, [run]);
 
   if (isIdle || isLoading) {
     return <FullPageLoading />;
@@ -63,9 +61,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     return <FullPageErrorFallback error={error} />;
   }
 
-  return (
-    <AuthContext.Provider children={children} value={{ user, login, logout }} />
-  );
+  return <AuthContext.Provider children={children} value={{ user, login, logout }} />;
 };
 
 export const useAuth = () => {

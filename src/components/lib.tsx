@@ -13,9 +13,9 @@ export const FullPageErrorFallback = ({ error }: { error: Error | null }) => (
   </FullPage>
 );
 
-const isError = (value: any): value is Error => value?.message;
+export const IsError = (value: any): value is Error => value?.message;
 export const ErrorBox = ({ error }: { error: unknown }) => {
-  if (isError(error)) {
+  if (IsError(error)) {
     return <Typography.Text type={'danger'}>{error?.message}</Typography.Text>;
   }
   return null;
@@ -37,4 +37,8 @@ export const ScreenContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+`;
+
+export const LongButton = styled(Button)`
+  width: 100%;
 `;

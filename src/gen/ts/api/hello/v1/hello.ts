@@ -32,9 +32,21 @@ export interface MeRequest {
  */
 export interface MeResponse {
     /**
-     * @generated from protobuf field: string username = 1;
+     * @generated from protobuf field: int64 id = 1;
      */
-    username: string;
+    id: string;
+    /**
+     * @generated from protobuf field: string name = 2;
+     */
+    name: string;
+    /**
+     * @generated from protobuf field: string token = 3;
+     */
+    token: string;
+    /**
+     * @generated from protobuf field: int64 expires_at = 4;
+     */
+    expiresAt: string;
 }
 // @generated message type with reflection information, may provide speed optimized methods
 class IntroRequest$Type extends MessageType<IntroRequest> {
@@ -74,7 +86,10 @@ export const MeRequest = new MeRequest$Type();
 class MeResponse$Type extends MessageType<MeResponse> {
     constructor() {
         super("api.hello.v1.MeResponse", [
-            { no: 1, name: "username", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+            { no: 1, name: "id", kind: "scalar", T: 3 /*ScalarType.INT64*/ },
+            { no: 2, name: "name", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "token", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 4, name: "expires_at", kind: "scalar", T: 3 /*ScalarType.INT64*/ }
         ]);
     }
 }

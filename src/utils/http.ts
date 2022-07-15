@@ -1,29 +1,15 @@
 import { GrpcWebFetchTransport } from '@protobuf-ts/grpcweb-transport';
-import { RpcOptions, ServiceInfo, UnaryCall } from '@protobuf-ts/runtime-rpc';
+import { RpcOptions } from '@protobuf-ts/runtime-rpc';
 import * as cli from 'client';
 import { useAuth } from 'pages/context/auth-context';
 import * as auth from 'pages/auth-provider';
 import { useCallback } from 'react';
 
-const apiUrl = process.env.API_URL as string;
-
+const apiUrl = 'http://localhost:3000';
+// process.env.API_URL as string;
 const trans = new GrpcWebFetchTransport({
   baseUrl: apiUrl,
-  interceptors: [
-    {
-      // adds auth header to unary requests
-      interceptUnary(next, method, input, options: RpcOptions): UnaryCall {
-        if (!options.meta) {
-          options.meta = {};
-        }
-
-        options.meta['Authorization'] = options.token
-          ? `Bearer ${options.token}`
-          : '';
-        return next(method, input, options);
-      },
-    },
-  ],
+  // format: 'binary',
 });
 
 interface Config extends RpcOptions {
@@ -37,17 +23,21 @@ export const http = (
   { data, token, meta, ...customConfig }: Config = {}
 ) => {
   const config = {
-    meta: { Authorization: token ? `Bearer ${token}` : '' },
+    meta: { Authorization: token ? `Bearer ${token}` : 'Bearer NoToken' },
     ...customConfig,
   };
   const client: any = new (cli as any)[svcName + 'Client'](trans);
+  // new Promise<void>((resolve, reject) => {
+
+  // })
 
   return (client[methodName]?.(data, config) as Promise<any>)
     .then(async (resp) => {
+      // const respJson = JSON.stringify(resp.response);
       if (resp.status?.code === 'OK') {
         return resp.response;
       } else {
-        return Promise.reject(resp.response);
+        return Promise.reject(new Error(resp.status.code));
       }
     })
     .catch(async (err: any) => {
@@ -55,7 +45,7 @@ export const http = (
         await auth.logout();
         window.location.reload();
       }
-      return Promise.reject({ message: err?.message });
+      return Promise.reject(new Error(err?.message));
     });
 };
 
