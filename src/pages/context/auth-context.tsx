@@ -20,6 +20,7 @@ interface AuthContextProps {
 const bootstrapUser = async () => {
   let user = null;
   const token = auth.getToken();
+  // console.log(token);
   if (token) {
     const data = await http('HelloService', 'me', {
       token,

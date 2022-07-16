@@ -1,18 +1,18 @@
 import { useAuth } from '../context/auth-context';
 import { Form, Input } from 'antd';
 import { LongButton, IsError } from 'components/lib';
-import { http } from 'utils/http';
 
 export const Login = ({ onError }: { onError: (error: Error) => void }) => {
   const { login } = useAuth();
   const handleTest = () => {
-    http('AuthService', 'login', { data: { username: '', password: '' } })
-      .then((resp) => {
-        console.log(resp);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    console.log(process.env.REACT_APP_API_URL);
+    // http('AuthService', 'login', { data: { username: '', password: '' } })
+    //   .then((resp) => {
+    //     console.log(resp);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   };
   const handleSubmit = async (values: { username: string; password: string }) => {
     // await login(values);

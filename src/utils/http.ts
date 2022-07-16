@@ -5,8 +5,8 @@ import { useAuth } from 'pages/context/auth-context';
 import * as auth from 'pages/auth-provider';
 import { useCallback } from 'react';
 
-const apiUrl = 'http://localhost:3000';
-// process.env.API_URL as string;
+// const apiUrl = 'http://localhost:3000';
+const apiUrl = process.env.REACT_APP_API_URL as string;
 const trans = new GrpcWebFetchTransport({
   baseUrl: apiUrl,
   // format: 'binary',
