@@ -6,38 +6,13 @@ import { http } from 'utils/http';
 export const Login = ({ onError }: { onError: (error: Error) => void }) => {
   const { login } = useAuth();
   const handleTest = () => {
-    http('AuthService', 'login', { data: { username: 'admin', password: 'password' } })
+    http('AuthService', 'login', { data: { username: '', password: '' } })
       .then((resp) => {
         console.log(resp);
       })
       .catch((err) => {
         console.log(err);
       });
-
-    // http('HelloService', 'intro', { data: { name: 'baoer' } })
-    //   .then((resp) => {
-    //     console.log(resp);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-
-    // const trans = new GrpcWebFetchTransport({
-    //   baseUrl: 'http://localhost:3000',
-    // });
-    // const auth = new AuthServiceClient(trans);
-
-    // auth.login({ username: 'admin', password: 'password' }, {}).then(
-    //   (resp) => {
-    //     console.log('typeof(resp):', typeof resp);
-    //     console.log('response:', JSON.stringify(resp.response));
-    //     console.log('status code:', resp.status.code);
-    //   },
-    //   (err) => {
-    //     console.log('error code:', err?.code);
-    //     console.log('error message', err?.message);
-    //   }
-    // );
   };
   const handleSubmit = async (values: { username: string; password: string }) => {
     // await login(values);
