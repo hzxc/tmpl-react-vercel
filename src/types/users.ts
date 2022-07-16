@@ -1,6 +1,6 @@
 export interface User {
-  id: string;
+  id: number;
   name: string;
   token: string;
-  expiresAt: string;
+  expiresAt: number;
 }
