@@ -6,7 +6,6 @@
     "@craco/craco": "^6.4.5",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-    "@protobuf-ts/grpc-transport": "^2.7.0",
     "@protobuf-ts/grpcweb-transport": "^2.7.0",
     "@protobuf-ts/runtime": "^2.7.0",
     "@protobuf-ts/runtime-rpc": "^2.7.0",

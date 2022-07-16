@@ -10,3 +10,6 @@ export const useMountedRef = () => {
   });
   return mountedRef;
 };
+
+// resetRoute
+export const resetRoute = () => (window.location.href = window.location.origin);

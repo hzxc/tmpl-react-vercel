@@ -1680,14 +1680,6 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@protobuf-ts/grpc-transport@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@protobuf-ts/grpc-transport/-/grpc-transport-2.7.0.tgz#8277ca38ae1b02b1cd4ce5137c1940eb47645e84"
-  integrity sha512-SelXw7/gBTg/XedmysTf/QYjcs4CgI9vqprPQaPIPp1CWNQgytydyKht1kRyURfFto+V4X33dT4zRLc4EnTCDA==
-  dependencies:
-    "@protobuf-ts/runtime" "^2.7.0"
-    "@protobuf-ts/runtime-rpc" "^2.7.0"
-
 "@protobuf-ts/grpcweb-transport@^2.7.0":
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/@protobuf-ts/grpcweb-transport/-/grpcweb-transport-2.7.0.tgz#26d5960ff8c6a922f3b359a0d609f271588914a4"
