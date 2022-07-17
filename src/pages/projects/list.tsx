@@ -1,10 +1,9 @@
-import { Dropdown, Menu, Modal, Table, TableProps } from 'antd';
+import { Table, TableProps } from 'antd';
 import { Pin } from 'components/pin';
 import dayjs from 'dayjs';
 import { Person, Project } from 'gen/ts/api/project/v1/project';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { User } from 'types/users';
 import { useEditProject } from 'utils/use-project';
 import { useProjectsQueryKey } from './project-utils';
 

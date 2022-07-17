@@ -6,10 +6,6 @@ export const usePeople = (param?: Partial<Person>) => {
   const client = useHttp();
 
   return useQuery<Person[]>(['people', param], () =>
-    client('ProjectService', 'personList', { data: param })
+    client('ProjectService', 'people', { data: param })
   );
 };
-
-// return useQuery<Project[], Error>(['projects', cleanObject(params)], () =>
-//     http('ProjectService', 'list', { data: params })
-//   );

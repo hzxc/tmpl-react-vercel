@@ -1,13 +1,15 @@
 import styled from '@emotion/styled';
 import { Button } from 'antd';
-import { ButtonNoPadding, Row } from 'components/lib';
+import { ButtonNoPadding, ErrorBox, Row } from 'components/lib';
 // import { CreateRequest } from 'gen/ts/api/project/v1/project';
 import React from 'react';
 import { useDebounce } from 'utils';
 import { useHttp } from 'utils/http';
 import { usePeople } from 'utils/use-people';
 import { useProjects } from 'utils/use-project';
+import { List } from './list';
 import { useProjectsSearchParams } from './project-utils';
+import { SearchPanel } from './search-panel';
 export const Projects = () => {
   const client = useHttp();
   const handleTest = () => {
@@ -26,7 +28,7 @@ export const Projects = () => {
     //     console.log('error message', err?.message);
     //   }
     // );
-    client('ProjectService', 'list').then(
+    client('ProjectService', 'people').then(
       (resp) => {
         console.log('response:', resp);
       },
@@ -48,6 +50,8 @@ export const Projects = () => {
         <ButtonNoPadding type={'link'}>Create project</ButtonNoPadding>
       </Row>
       <Button onClick={handleTest}>Test</Button>
+      <SearchPanel param={param} setParam={setParam} />
+      <ErrorBox error={error} />
       <List dataSource={list || []} people={people || []} loading={isLoading} />
     </Container>
   );
