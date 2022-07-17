@@ -5,14 +5,14 @@
 import { ServiceType } from "@protobuf-ts/runtime-rpc";
 import { MessageType } from "@protobuf-ts/runtime";
 /**
- * @generated from protobuf message api.project.v1.PersonListRequest
+ * @generated from protobuf message api.project.v1.PeopleRequest
  */
-export interface PersonListRequest {
+export interface PeopleRequest {
 }
 /**
- * @generated from protobuf message api.project.v1.PersonListResponse
+ * @generated from protobuf message api.project.v1.PeopleResponse
  */
-export interface PersonListResponse {
+export interface PeopleResponse {
     /**
      * @generated from protobuf field: repeated api.project.v1.Person data = 1;
      */
@@ -233,27 +233,27 @@ export interface Project {
     updatedAt: number;
 }
 // @generated message type with reflection information, may provide speed optimized methods
-class PersonListRequest$Type extends MessageType<PersonListRequest> {
+class PeopleRequest$Type extends MessageType<PeopleRequest> {
     constructor() {
-        super("api.project.v1.PersonListRequest", []);
+        super("api.project.v1.PeopleRequest", []);
     }
 }
 /**
- * @generated MessageType for protobuf message api.project.v1.PersonListRequest
+ * @generated MessageType for protobuf message api.project.v1.PeopleRequest
  */
-export const PersonListRequest = new PersonListRequest$Type();
+export const PeopleRequest = new PeopleRequest$Type();
 // @generated message type with reflection information, may provide speed optimized methods
-class PersonListResponse$Type extends MessageType<PersonListResponse> {
+class PeopleResponse$Type extends MessageType<PeopleResponse> {
     constructor() {
-        super("api.project.v1.PersonListResponse", [
+        super("api.project.v1.PeopleResponse", [
             { no: 1, name: "data", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => Person }
         ]);
     }
 }
 /**
- * @generated MessageType for protobuf message api.project.v1.PersonListResponse
+ * @generated MessageType for protobuf message api.project.v1.PeopleResponse
  */
-export const PersonListResponse = new PersonListResponse$Type();
+export const PeopleResponse = new PeopleResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class Person$Type extends MessageType<Person> {
     constructor() {
@@ -412,5 +412,5 @@ export const ProjectService = new ServiceType("api.project.v1.ProjectService", [
     { name: "Create", options: {}, I: CreateRequest, O: CreateResponse },
     { name: "Edit", options: {}, I: EditRequest, O: EditResponse },
     { name: "Delete", options: {}, I: DeleteRequest, O: DeleteResponse },
-    { name: "PersonList", options: {}, I: PersonListRequest, O: PersonListResponse }
+    { name: "People", options: {}, I: PeopleRequest, O: PeopleResponse }
 ]);

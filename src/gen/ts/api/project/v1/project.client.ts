@@ -5,8 +5,8 @@
 import type { RpcTransport } from "@protobuf-ts/runtime-rpc";
 import type { ServiceInfo } from "@protobuf-ts/runtime-rpc";
 import { ProjectService } from "./project";
-import type { PersonListResponse } from "./project";
-import type { PersonListRequest } from "./project";
+import type { PeopleResponse } from "./project";
+import type { PeopleRequest } from "./project";
 import type { DeleteResponse } from "./project";
 import type { DeleteRequest } from "./project";
 import type { EditResponse } from "./project";
@@ -39,9 +39,9 @@ export interface IProjectServiceClient {
      */
     delete(input: DeleteRequest, options?: RpcOptions): UnaryCall<DeleteRequest, DeleteResponse>;
     /**
-     * @generated from protobuf rpc: PersonList(api.project.v1.PersonListRequest) returns (api.project.v1.PersonListResponse);
+     * @generated from protobuf rpc: People(api.project.v1.PeopleRequest) returns (api.project.v1.PeopleResponse);
      */
-    personList(input: PersonListRequest, options?: RpcOptions): UnaryCall<PersonListRequest, PersonListResponse>;
+    people(input: PeopleRequest, options?: RpcOptions): UnaryCall<PeopleRequest, PeopleResponse>;
 }
 /**
  * @generated from protobuf service api.project.v1.ProjectService
@@ -81,10 +81,10 @@ export class ProjectServiceClient implements IProjectServiceClient, ServiceInfo 
         return stackIntercept<DeleteRequest, DeleteResponse>("unary", this._transport, method, opt, input);
     }
     /**
-     * @generated from protobuf rpc: PersonList(api.project.v1.PersonListRequest) returns (api.project.v1.PersonListResponse);
+     * @generated from protobuf rpc: People(api.project.v1.PeopleRequest) returns (api.project.v1.PeopleResponse);
      */
-    personList(input: PersonListRequest, options?: RpcOptions): UnaryCall<PersonListRequest, PersonListResponse> {
+    people(input: PeopleRequest, options?: RpcOptions): UnaryCall<PeopleRequest, PeopleResponse> {
         const method = this.methods[4], opt = this._transport.mergeOptions(options);
-        return stackIntercept<PersonListRequest, PersonListResponse>("unary", this._transport, method, opt, input);
+        return stackIntercept<PeopleRequest, PeopleResponse>("unary", this._transport, method, opt, input);
     }
 }
