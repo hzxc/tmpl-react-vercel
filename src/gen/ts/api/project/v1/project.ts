@@ -185,6 +185,14 @@ export interface CreateResponse {
  * @generated from protobuf message api.project.v1.ListRequest
  */
 export interface ListRequest {
+    /**
+     * @generated from protobuf field: optional string name = 1;
+     */
+    name?: string;
+    /**
+     * @generated from protobuf field: optional int32 person_id = 2;
+     */
+    personId?: number;
 }
 /**
  * @generated from protobuf message api.project.v1.ListResponse
@@ -366,7 +374,10 @@ export const CreateResponse = new CreateResponse$Type();
 // @generated message type with reflection information, may provide speed optimized methods
 class ListRequest$Type extends MessageType<ListRequest> {
     constructor() {
-        super("api.project.v1.ListRequest", []);
+        super("api.project.v1.ListRequest", [
+            { no: 1, name: "name", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
+            { no: 2, name: "person_id", kind: "scalar", opt: true, T: 5 /*ScalarType.INT32*/ }
+        ]);
     }
 }
 /**

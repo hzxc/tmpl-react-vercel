@@ -1,10 +1,10 @@
 import { useHttp } from './http';
 import { QueryKey, useMutation, useQuery } from 'react-query';
 import { useEditConfig } from './use-optimistic-update';
-import { Project, ListResponse } from 'gen/ts/api/project/v1/project';
+import { Project, ListResponse, ListRequest } from 'gen/ts/api/project/v1/project';
 import { cleanObject } from 'utils';
 
-export const useProjects = (params?: Partial<Project>) => {
+export const useProjects = (params?: Partial<ListRequest>) => {
   const http = useHttp();
   return useQuery<ListResponse, Error>(['projects', cleanObject(params)], () =>
     http('ProjectService', 'list', { data: params })
