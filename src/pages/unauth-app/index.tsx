@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import logo from 'assets/logo.svg';
-import left from 'assets/left.svg';
-import right from 'assets/right.svg';
+import left from 'assets/left.png';
+import bg from 'assets/bg.png';
+import right from 'assets/right.png';
 import { Card, Typography } from 'antd';
 import { useState } from 'react';
 import { Login } from './login';
@@ -34,10 +35,13 @@ const Background = styled.div`
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: left bottom, right bottom;
-  /* background-size: calc(((100vw - 40rem) / 2) - 3.2rem),
-    calc(((100vw - 40rem) / 2) - 3.2rem), cover; */
-  background-image: url(${left}), url(${right});
+  /* background-position: bottom; */
+  opacity: 0.3;
+  /* background-position: left bottom, right bottom; */
+  /* background-size: calc(((100vw - 40rem) / 2) - 3.2rem), calc(((100vw - 40rem) / 2) - 3.2rem), cover; */
+  background-size: cover;
+  /* background-image: url(${left}), url(${right}); */
+  background-image: url(${bg});
 `;
 const Container = styled.div`
   display: flex;

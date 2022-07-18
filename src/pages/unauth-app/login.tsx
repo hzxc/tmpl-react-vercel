@@ -4,16 +4,7 @@ import { LongButton, IsError } from 'components/lib';
 
 export const Login = ({ onError }: { onError: (error: Error) => void }) => {
   const { login } = useAuth();
-  const handleTest = () => {
-    console.log(process.env.REACT_APP_API_URL);
-    // http('AuthService', 'login', { data: { username: '', password: '' } })
-    //   .then((resp) => {
-    //     console.log(resp);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
-  };
+
   const handleSubmit = async (values: { username: string; password: string }) => {
     // await login(values);
     try {
@@ -36,9 +27,6 @@ export const Login = ({ onError }: { onError: (error: Error) => void }) => {
         <LongButton htmlType={'submit'} type={'primary'}>
           Login
         </LongButton>
-      </Form.Item>
-      <Form.Item>
-        <LongButton onClick={handleTest}>Test</LongButton>
       </Form.Item>
     </Form>
   );

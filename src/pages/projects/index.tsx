@@ -46,13 +46,13 @@ export const Projects = () => {
   return (
     <Container>
       <Row between={true}>
-        <h1>Projects list</h1>
-        <ButtonNoPadding type={'link'}>Create project</ButtonNoPadding>
+        <h1>Projects</h1>
+        <ButtonNoPadding type={'link'}>Create</ButtonNoPadding>
       </Row>
       <Button onClick={handleTest}>Test</Button>
       <SearchPanel param={param} setParam={setParam} />
       <ErrorBox error={error} />
-      <List dataSource={list || []} people={people || []} loading={isLoading} />
+      <List dataSource={list?.data || []} people={people?.data || []} loading={isLoading} />
     </Container>
   );
 };

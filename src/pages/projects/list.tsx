@@ -42,10 +42,10 @@ export const List = React.memo(({ people, ...props }: ListProps) => {
         },
         {
           title: 'created',
-          render(proj) {
+          render(v) {
             return (
               <span>
-                {proj.created ? dayjs(proj.created).format('YYYY-MM-DD HH:mm:ss') : 'None'}
+                {v.createdAt ? dayjs.unix(v.createdAt).format('YYYY-MM-DD HH:mm:ss') : 'None'}
               </span>
             );
           },
