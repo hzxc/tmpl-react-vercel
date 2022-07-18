@@ -48,10 +48,6 @@ export interface DeleteResponse {
      * @generated from protobuf field: int32 id = 1;
      */
     id: number;
-    /**
-     * @generated from protobuf field: string name = 2;
-     */
-    name: string;
 }
 /**
  * @generated from protobuf message api.project.v1.EditRequest
@@ -62,25 +58,25 @@ export interface EditRequest {
      */
     id: number;
     /**
-     * @generated from protobuf field: string name = 2;
+     * @generated from protobuf field: optional string name = 2;
      */
-    name: string;
+    name?: string;
     /**
-     * @generated from protobuf field: int32 person_id = 3;
+     * @generated from protobuf field: optional int32 person_id = 3;
      */
-    personId: number;
+    personId?: number;
     /**
-     * @generated from protobuf field: bool pin = 4;
+     * @generated from protobuf field: optional bool pin = 4;
      */
-    pin: boolean;
+    pin?: boolean;
     /**
-     * @generated from protobuf field: string organization = 5;
+     * @generated from protobuf field: optional string organization = 5;
      */
-    organization: string;
+    organization?: string;
     /**
-     * @generated from protobuf field: string description = 6;
+     * @generated from protobuf field: optional string description = 6;
      */
-    description: string;
+    description?: string;
 }
 /**
  * @generated from protobuf message api.project.v1.EditResponse
@@ -90,34 +86,6 @@ export interface EditResponse {
      * @generated from protobuf field: int32 id = 1;
      */
     id: number;
-    /**
-     * @generated from protobuf field: string name = 2;
-     */
-    name: string;
-    /**
-     * @generated from protobuf field: int32 person_id = 3;
-     */
-    personId: number;
-    /**
-     * @generated from protobuf field: bool pin = 4;
-     */
-    pin: boolean;
-    /**
-     * @generated from protobuf field: string organization = 5;
-     */
-    organization: string;
-    /**
-     * @generated from protobuf field: string description = 6;
-     */
-    description: string;
-    /**
-     * @generated from protobuf field: int32 created_at = 7;
-     */
-    createdAt: number;
-    /**
-     * @generated from protobuf field: int32 updated_at = 8;
-     */
-    updatedAt: number;
 }
 /**
  * @generated from protobuf message api.project.v1.CreateRequest
@@ -291,8 +259,7 @@ export const DeleteRequest = new DeleteRequest$Type();
 class DeleteResponse$Type extends MessageType<DeleteResponse> {
     constructor() {
         super("api.project.v1.DeleteResponse", [
-            { no: 1, name: "id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "name", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+            { no: 1, name: "id", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
         ]);
     }
 }
@@ -305,11 +272,11 @@ class EditRequest$Type extends MessageType<EditRequest> {
     constructor() {
         super("api.project.v1.EditRequest", [
             { no: 1, name: "id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "name", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 3, name: "person_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 4, name: "pin", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 5, name: "organization", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 6, name: "description", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+            { no: 2, name: "name", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "person_id", kind: "scalar", opt: true, T: 5 /*ScalarType.INT32*/ },
+            { no: 4, name: "pin", kind: "scalar", opt: true, T: 8 /*ScalarType.BOOL*/ },
+            { no: 5, name: "organization", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
+            { no: 6, name: "description", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ }
         ]);
     }
 }
@@ -321,14 +288,7 @@ export const EditRequest = new EditRequest$Type();
 class EditResponse$Type extends MessageType<EditResponse> {
     constructor() {
         super("api.project.v1.EditResponse", [
-            { no: 1, name: "id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 2, name: "name", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 3, name: "person_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 4, name: "pin", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
-            { no: 5, name: "organization", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 6, name: "description", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-            { no: 7, name: "created_at", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-            { no: 8, name: "updated_at", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+            { no: 1, name: "id", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
         ]);
     }
 }

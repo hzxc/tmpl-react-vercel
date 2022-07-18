@@ -35,7 +35,11 @@ export const http = (
     .then(async (resp) => {
       // const respJson = JSON.stringify(resp.response);
       if (resp.status?.code === 'OK') {
-        return resp.response;
+        if (resp.response?.data) {
+          return resp.response.data;
+        } else {
+          return resp.response;
+        }
       } else {
         return Promise.reject(new Error(resp.status.code));
       }

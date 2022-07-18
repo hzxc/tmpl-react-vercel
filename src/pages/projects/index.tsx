@@ -39,7 +39,7 @@ export const Projects = () => {
   };
 
   const [param, setParam] = useProjectsSearchParams();
-  const debouncedParam = useDebounce(param, 300);
+  const debouncedParam = useDebounce(param, 500);
   const { isLoading, data: list, error } = useProjects(debouncedParam);
   const { data: people } = usePeople();
 
@@ -52,7 +52,7 @@ export const Projects = () => {
       <Button onClick={handleTest}>Test</Button>
       <SearchPanel param={param} setParam={setParam} />
       <ErrorBox error={error} />
-      <List dataSource={list?.data || []} people={people?.data || []} loading={isLoading} />
+      <List dataSource={list || []} people={people || []} loading={isLoading} />
     </Container>
   );
 };

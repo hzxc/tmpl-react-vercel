@@ -1,12 +1,12 @@
 import { useHttp } from './http';
 import { QueryKey, useMutation, useQuery } from 'react-query';
 import { useEditConfig } from './use-optimistic-update';
-import { Project, ListResponse, ListRequest } from 'gen/ts/api/project/v1/project';
+import { ListRequest, EditRequest, Project } from 'gen/ts/api/project/v1/project';
 import { cleanObject } from 'utils';
 
 export const useProjects = (params?: Partial<ListRequest>) => {
   const http = useHttp();
-  return useQuery<ListResponse, Error>(['projects', cleanObject(params)], () =>
+  return useQuery<Project[], Error>(['projects', cleanObject(params)], () =>
     http('ProjectService', 'list', { data: params })
   );
 };
@@ -14,7 +14,7 @@ export const useProjects = (params?: Partial<ListRequest>) => {
 export const useEditProject = (queryKey: QueryKey) => {
   const client = useHttp();
   return useMutation(
-    (params: Partial<Project>) => client('ProjectService', 'edit', { data: params }),
+    (params: Partial<EditRequest>) => client('ProjectService', 'edit', { data: params }),
     useEditConfig(queryKey)
   );
 };
