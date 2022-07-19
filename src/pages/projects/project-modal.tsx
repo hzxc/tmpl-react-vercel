@@ -11,17 +11,23 @@ export const ProjectModal = () => {
 
   const useMutateProject = editingProject ? useEditProject : useAddProject;
 
-  const { mutateAsync, error, isLoading: mutateLoading } = useMutateProject(useProjectsQueryKey());
+  const { mutateAsync, error } = useMutateProject(useProjectsQueryKey());
   const [form] = Form.useForm();
 
   const onFinish = (values: any) => {
-    mutateAsync({ ...editingProject, ...values }).then(() => {
-      form.resetFields();
+    mutateAsync({ ...{ pin: false, description: '' }, ...editingProject, ...values }).then(() => {
+      // form.resetFields();
+      form.resetFields(['name', 'organization']);
+      form.setFieldsValue({ personId: 0 });
       close();
     });
   };
   const closeModal = () => {
-    form.resetFields();
+    // form.resetFields();
+
+    form.resetFields(['name', 'organization']);
+    form.setFieldsValue({ personId: 0 });
+    // console.log(form.getFieldValue('personId'));
     close();
   };
 
@@ -32,7 +38,7 @@ export const ProjectModal = () => {
   }, [editingProject, form]);
 
   return (
-    <Drawer onClose={closeModal} visible={projectModalOpen} width={'100%'} forceRender={true}>
+    <Drawer onClose={closeModal} visible={projectModalOpen} width={'70%'} forceRender={true}>
       <Container>
         {isLoading ? (
           <Spin size={'large'} />
@@ -40,7 +46,7 @@ export const ProjectModal = () => {
           <>
             <h1>{title}</h1>
             <ErrorBox error={error} />
-            <Form form={form} layout={'vertical'} style={{ width: '40rem' }} onFinish={onFinish}>
+            <Form form={form} layout={'vertical'} style={{ width: '30rem' }} onFinish={onFinish}>
               <Form.Item
                 name='name'
                 label={'name'}
@@ -57,6 +63,7 @@ export const ProjectModal = () => {
               </Form.Item>
               <Form.Item
                 name='personId'
+                initialValue={0}
                 label={'person'}
                 rules={[{ required: true, message: 'person required' }]}
               >
@@ -77,9 +84,11 @@ export const ProjectModal = () => {
 
 const Container = styled.div`
   flex-direction: column;
-  height: 80vh;
+  /* height: 100%; */
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: aquamarine;
 `;

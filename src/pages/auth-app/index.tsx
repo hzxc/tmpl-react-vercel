@@ -7,7 +7,6 @@ import { Button, Dropdown, Menu } from 'antd';
 import { useAuth } from 'pages/context/auth-context';
 import { Route, Routes, Navigate } from 'react-router';
 import { Projects } from 'pages/projects';
-import { ProjectModal } from 'pages/projects/project-modal';
 function AuthApp() {
   return (
     <Container>
@@ -65,11 +64,13 @@ const Header = styled(Row)`
   padding: 3.2rem;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
+  background-color: antiquewhite;
 `;
 const HeaderLeft = styled(Row)``;
 const HeaderRight = styled.div``;
 const Main = styled.main`
   grid-area: main;
+  background-color: aliceblue;
   /* display: flex;
   flex-direction: column;
   overflow: hidden;

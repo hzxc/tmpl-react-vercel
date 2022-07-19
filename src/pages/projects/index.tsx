@@ -41,13 +41,13 @@ export const Projects = () => {
       {/* <Button onClick={handleTest}>Test</Button> */}
       <SearchPanel param={param} setParam={setParam} />
       <ErrorBox error={error} />
-
       <List dataSource={list || []} people={people || []} loading={isLoading} />
     </Container>
   );
 };
 
 const Container = styled.div`
-  flex: 1;
+  background-color: azure;
+  /* flex: 1; */
   padding: 3.2rem;
 `;

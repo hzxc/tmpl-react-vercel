@@ -1,10 +1,10 @@
 import React from 'react';
 import { Form, Input } from 'antd';
 import { PersonSelect } from 'components/person-select';
-import { Project } from 'gen/ts/api/project/v1/project';
+import { ListRequest } from 'gen/ts/api/project/v1/project';
 
 interface SearchPanelProps {
-  param: Partial<Pick<Project, 'name' | 'personId'>>;
+  param: Partial<Pick<ListRequest, 'name' | 'personId'>>;
   setParam: (param: SearchPanelProps['param']) => void;
 }
 

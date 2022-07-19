@@ -1,11 +1,13 @@
-import { Table, TableProps } from 'antd';
+import { Dropdown, Menu, Modal, Space, Table, TableProps } from 'antd';
+import { DeleteOutlined, EditOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import { ButtonNoPadding } from 'components/lib';
 import { Pin } from 'components/pin';
 import dayjs from 'dayjs';
 import { Person, Project } from 'gen/ts/api/project/v1/project';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useEditProject } from 'utils/use-project';
-import { useProjectsQueryKey } from './project-utils';
+import { useDeleteProject, useEditProject } from 'utils/use-project';
+import { useProjectModal, useProjectsQueryKey } from './project-utils';
 
 interface ListProps extends TableProps<Project> {
   people: Person[];
@@ -22,7 +24,16 @@ export const List = React.memo(({ people, ...props }: ListProps) => {
         {
           title: <Pin checked={true} disabled={true} />,
           render(v) {
-            return <Pin checked={v.pin} onCheckedChange={pinProject(v.id)} />;
+            return (
+              <Space>
+                <Pin
+                  checked={v.pin}
+                  onCheckedChange={pinProject(v.id)}
+                  // style={{ paddingRight: 1 + 'rem' }}
+                />
+                <More project={v} />
+              </Space>
+            );
           },
         },
         {
@@ -55,3 +66,38 @@ export const List = React.memo(({ people, ...props }: ListProps) => {
     />
   );
 });
+
+const More = ({ project }: { project: Project }) => {
+  const { startEditId } = useProjectModal();
+  const editProject = (id: number) => () => startEditId(id);
+  const { mutate: deleteProject } = useDeleteProject(useProjectsQueryKey());
+
+  const items = [
+    { label: 'Edit', key: 'edit', icon: <DeleteOutlined /> },
+    { label: 'Delete', key: 'delete', icon: <EditOutlined /> },
+  ];
+
+  const action = (item: any) => {
+    if (item.key === 'edit') {
+      editProject(project.id)();
+    } else if (item.key === 'delete') {
+      confirmDeleteProject(project.id);
+    }
+  };
+  const confirmDeleteProject = (id: number) => {
+    Modal.confirm({
+      title: 'Are you sure to delete this project?',
+      okText: 'Yes',
+      onOk() {
+        deleteProject({ id });
+      },
+    });
+  };
+  return (
+    <Dropdown arrow={true} autoFocus={true} overlay={<Menu onClick={action} items={items}></Menu>}>
+      <ButtonNoPadding type={'link'}>
+        <MenuUnfoldOutlined />
+      </ButtonNoPadding>
+    </Dropdown>
+  );
+};
