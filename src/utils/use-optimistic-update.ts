@@ -23,3 +23,6 @@ export const useEditConfig = (queryKey: QueryKey) =>
     (target, old) =>
       old?.map((item) => (item.id === target.id ? { ...item, ...target } : item)) || []
   );
+
+export const useAddConfig = (queryKey: QueryKey) =>
+  useConfig(queryKey, (target, old) => (old ? [...old, target] : []));

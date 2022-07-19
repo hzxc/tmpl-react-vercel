@@ -11,7 +11,10 @@ function App() {
   const { user } = useAuth();
   return (
     <div className='App'>
+      {/* untodo */}
+      {/* <ErrorBoundary fallbackRender={ FullPageErrorFallback }></ErrorBoundary> */}
       {user ? <AuthApp /> : <UnauthApp />}
+      {/* untodo */}
       {/* <React.Suspense fallback={<FullPageLoading />}>
         {user ? <AuthenticatedApp /> : <UnauthenticatedApp />}
       </React.Suspense> */}

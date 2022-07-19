@@ -5,6 +5,44 @@
 import { ServiceType } from "@protobuf-ts/runtime-rpc";
 import { MessageType } from "@protobuf-ts/runtime";
 /**
+ * @generated from protobuf message api.project.v1.ProjectRequest
+ */
+export interface ProjectRequest {
+    /**
+     * @generated from protobuf field: int32 id = 1;
+     */
+    id: number;
+}
+/**
+ * @generated from protobuf message api.project.v1.ProjectResponse
+ */
+export interface ProjectResponse {
+    /**
+     * @generated from protobuf field: int32 id = 1;
+     */
+    id: number;
+    /**
+     * @generated from protobuf field: string name = 2;
+     */
+    name: string;
+    /**
+     * @generated from protobuf field: int32 person_id = 3;
+     */
+    personId: number;
+    /**
+     * @generated from protobuf field: bool pin = 4;
+     */
+    pin: boolean;
+    /**
+     * @generated from protobuf field: string organization = 5;
+     */
+    organization: string;
+    /**
+     * @generated from protobuf field: string description = 6;
+     */
+    description: string;
+}
+/**
  * @generated from protobuf message api.project.v1.PeopleRequest
  */
 export interface PeopleRequest {
@@ -209,6 +247,35 @@ export interface Project {
     updatedAt: number;
 }
 // @generated message type with reflection information, may provide speed optimized methods
+class ProjectRequest$Type extends MessageType<ProjectRequest> {
+    constructor() {
+        super("api.project.v1.ProjectRequest", [
+            { no: 1, name: "id", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message api.project.v1.ProjectRequest
+ */
+export const ProjectRequest = new ProjectRequest$Type();
+// @generated message type with reflection information, may provide speed optimized methods
+class ProjectResponse$Type extends MessageType<ProjectResponse> {
+    constructor() {
+        super("api.project.v1.ProjectResponse", [
+            { no: 1, name: "id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 2, name: "name", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 3, name: "person_id", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+            { no: 4, name: "pin", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+            { no: 5, name: "organization", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+            { no: 6, name: "description", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+        ]);
+    }
+}
+/**
+ * @generated MessageType for protobuf message api.project.v1.ProjectResponse
+ */
+export const ProjectResponse = new ProjectResponse$Type();
+// @generated message type with reflection information, may provide speed optimized methods
 class PeopleRequest$Type extends MessageType<PeopleRequest> {
     constructor() {
         super("api.project.v1.PeopleRequest", []);
@@ -379,6 +446,7 @@ export const Project = new Project$Type();
  * @generated ServiceType for protobuf service api.project.v1.ProjectService
  */
 export const ProjectService = new ServiceType("api.project.v1.ProjectService", [
+    { name: "Project", options: {}, I: ProjectRequest, O: ProjectResponse },
     { name: "List", options: {}, I: ListRequest, O: ListResponse },
     { name: "Create", options: {}, I: CreateRequest, O: CreateResponse },
     { name: "Edit", options: {}, I: EditRequest, O: EditResponse },

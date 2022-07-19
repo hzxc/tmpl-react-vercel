@@ -7,6 +7,7 @@ import { Button, Dropdown, Menu } from 'antd';
 import { useAuth } from 'pages/context/auth-context';
 import { Route, Routes, Navigate } from 'react-router';
 import { Projects } from 'pages/projects';
+import { ProjectModal } from 'pages/projects/project-modal';
 function AuthApp() {
   return (
     <Container>

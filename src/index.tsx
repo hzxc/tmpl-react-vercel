@@ -6,11 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.less';
 import { AppProviders } from 'pages/context';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
+    {/* untodo */}
+    {/* <Profiler id={'Root App'} phases={['mount']}></Profiler> */}
     <AppProviders>
       <App />
     </AppProviders>

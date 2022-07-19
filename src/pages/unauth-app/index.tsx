@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import logo from 'assets/logo.svg';
 import left from 'assets/left.png';
-import bg from 'assets/bg.png';
+import bg from 'assets/bg.jpg';
 import right from 'assets/right.png';
 import { Card, Typography } from 'antd';
 import { useState } from 'react';
