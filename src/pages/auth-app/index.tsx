@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Row } from 'components/lib';
-import { resetRoute } from 'utils';
 import { ReactComponent as SoftwareLogo } from 'assets/software-logo.svg';
 import { Button, Dropdown, Menu } from 'antd';
 import { useAuth } from 'pages/context/auth-context';
