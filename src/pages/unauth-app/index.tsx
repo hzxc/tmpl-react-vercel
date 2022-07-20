@@ -7,7 +7,7 @@ import { Card, Typography } from 'antd';
 import { useState } from 'react';
 import { Login } from './login';
 
-export const UnauthApp = () => {
+export default function UnauthApp() {
   const [error, setError] = useState<Error | null>(null);
   return (
     <Container>
@@ -20,7 +20,7 @@ export const UnauthApp = () => {
       </ShadowCard>
     </Container>
   );
-};
+}
 
 const Header = styled.header`
   background: url(${logo}) no-repeat center;

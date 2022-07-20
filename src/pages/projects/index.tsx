@@ -47,7 +47,7 @@ export const Projects = () => {
 };
 
 const Container = styled.div`
-  background-color: azure;
+  /* background-color: azure; */
   /* flex: 1; */
   padding: 3.2rem;
 `;

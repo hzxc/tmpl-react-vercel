@@ -8,6 +8,9 @@ import { useAuth } from 'pages/context/auth-context';
 import { Route, Routes, Navigate } from 'react-router';
 import { Projects } from 'pages/projects';
 import { Project } from 'pages/projects/project';
+import { TestDynamicTheme } from 'pages/test/dynamic-theme';
+import { Test } from 'pages/test';
+import { Link } from 'react-router-dom';
 function AuthApp() {
   return (
     <Container>
@@ -16,6 +19,8 @@ function AuthApp() {
         <Routes>
           <Route path={'/projects'} element={<Projects />} />
           <Route path={'/projects/:projectId/*'} element={<Project />} />
+          <Route path={'/test'} element={<Test />} />
+          <Route path={'/test/dynamic-theme'} element={<TestDynamicTheme />} />
           {/* <Route path={'/'} element={<Navigate to='/projects' replace={true} />} /> */}
           <Route path='*' element={<Navigate to='/projects' replace={true} />} />
           {/* <Navigate to={'/projects'} /> */}
@@ -31,9 +36,12 @@ const PageHeader = () => {
   return (
     <Header between={true}>
       <HeaderLeft gap={true}>
-        <Button type={'link'} onClick={resetRoute}>
+        {/* <Button type={'link'} onClick={resetRoute}>
           <SoftwareLogo width={'18rem'} color={'rgb(38, 132, 255)'} />
-        </Button>
+        </Button> */}
+        <Link to='/'>
+          <SoftwareLogo width={'18rem'} color={'rgb(38, 132, 255)'} />
+        </Link>
       </HeaderLeft>
       <HeaderRight>
         <User />
@@ -68,13 +76,13 @@ const Header = styled(Row)`
   padding: 3.2rem;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   z-index: 1;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 `;
 const HeaderLeft = styled(Row)``;
 const HeaderRight = styled.div``;
 const Main = styled.main`
   grid-area: main;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   /* display: flex;
   flex-direction: column;
   overflow: hidden;

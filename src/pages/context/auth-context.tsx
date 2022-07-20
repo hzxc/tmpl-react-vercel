@@ -2,7 +2,6 @@ import React, { ReactNode, useContext, useEffect } from 'react';
 import * as auth from '../auth-provider';
 import { useAsync } from '../../utils/use-async';
 import { FullPageErrorFallback, FullPageLoading } from 'components/lib';
-import { useQueryClient } from 'react-query';
 import { User } from 'types/users';
 import { http } from 'utils/http';
 
@@ -34,7 +33,7 @@ const AuthContext = React.createContext<AuthContextProps | undefined>(undefined)
 AuthContext.displayName = 'AuthContext';
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
-  const queryClient = useQueryClient();
+  // const queryClient = useQueryClient();
   const {
     run,
     error,
@@ -48,7 +47,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const logout = () =>
     auth.logout().then(() => {
       setUser(null);
-      queryClient.clear();
+      // queryClient.clear();
     });
 
   useEffect(() => {

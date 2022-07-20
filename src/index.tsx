@@ -3,16 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import 'antd/dist/antd.less';
+// import 'antd/dist/antd.less';
+// import 'antd/dist/antd.dark.less';
+// import 'antd/dist/antd.min.css';
+import 'antd/dist/antd.variable.min.css';
+import 'antd/dist/antd.dark.min.css';
+import 'antd/dist/antd.compact.min.css';
+import 'antd/dist/antd.min.css';
 import { AppProviders } from 'pages/context';
+import { ConfigProvider } from 'antd';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
     {/* UNDO */}
     {/* <Profiler id={'Root App'} phases={['mount']}></Profiler> */}
+
     <AppProviders>
-      <App />
+      <ConfigProvider>
+        <App />
+      </ConfigProvider>
     </AppProviders>
   </React.StrictMode>
 );
