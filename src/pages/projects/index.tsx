@@ -28,7 +28,7 @@ export const Projects = () => {
   const { data: people } = usePeople();
 
   return (
-    // untodo
+    // UNDO
     // <Profiler id={'project list'}></Profiler>
     <Container>
       <ProjectModal />

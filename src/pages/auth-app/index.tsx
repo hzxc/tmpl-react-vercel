@@ -7,6 +7,7 @@ import { Button, Dropdown, Menu } from 'antd';
 import { useAuth } from 'pages/context/auth-context';
 import { Route, Routes, Navigate } from 'react-router';
 import { Projects } from 'pages/projects';
+import { Project } from 'pages/projects/project';
 function AuthApp() {
   return (
     <Container>
@@ -14,9 +15,12 @@ function AuthApp() {
       <Main>
         <Routes>
           <Route path={'/projects'} element={<Projects />} />
-          <Route path={'/projects/:projectId/*'} element={<Projects />} />
-          <Route path={'/'} element={<Projects />} />
-          <Route path='*' element={<Navigate to='/' replace={true} />} />
+          <Route path={'/projects/:projectId/*'} element={<Project />} />
+          {/* <Route path={'/'} element={<Navigate to='/projects' replace={true} />} /> */}
+          <Route path='*' element={<Navigate to='/projects' replace={true} />} />
+          {/* <Navigate to={'/projects'} /> */}
+          {/* <Route path={'/'} element={<Projects />} />
+          <Route path='*' element={<Navigate to='/' replace={true} />} /> */}
         </Routes>
       </Main>
     </Container>

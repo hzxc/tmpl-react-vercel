@@ -14,6 +14,7 @@ interface ListProps extends TableProps<Project> {
 }
 
 export const List = React.memo(({ people, ...props }: ListProps) => {
+  // useDocumentTitle('Project List');
   const { mutate } = useEditProject(useProjectsQueryKey());
   const pinProject = (id: number) => (pin: boolean) => mutate({ id, pin });
   return (
@@ -94,7 +95,11 @@ const More = ({ project }: { project: Project }) => {
     });
   };
   return (
-    <Dropdown arrow={true} autoFocus={true} overlay={<Menu onClick={action} items={items}></Menu>}>
+    <Dropdown
+      arrow={true}
+      trigger={['click']}
+      overlay={<Menu onClick={action} items={items}></Menu>}
+    >
       <ButtonNoPadding type={'link'}>
         <MenuUnfoldOutlined />
       </ButtonNoPadding>

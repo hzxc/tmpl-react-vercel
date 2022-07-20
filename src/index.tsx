@@ -9,7 +9,7 @@ import { AppProviders } from 'pages/context';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    {/* untodo */}
+    {/* UNDO */}
     {/* <Profiler id={'Root App'} phases={['mount']}></Profiler> */}
     <AppProviders>
       <App />

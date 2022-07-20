@@ -38,7 +38,8 @@ export const useProject = (id?: number) => {
     ['project', { id }],
     () => client(svc, 'project', { data: { id } }),
     {
-      // untodo
+      // if Boolean(id) trigger this hook
+      // enabled: !!id,
       enabled: Boolean(id),
     }
   );
