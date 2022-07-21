@@ -139,7 +139,9 @@
   'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
   'Noto Color Emoji';
 @code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-@text-color: fade(@black, 85%);
+// TAG
+// @text-color: fade(@black, 85%);
+@text-color: rgb(122, 110, 170);
 @text-color-secondary: fade(@black, 45%);
 @text-color-inverse: @white;
 @icon-color: inherit;
@@ -347,6 +349,7 @@
 @divider-vertical-gutter: 8px;
 
 // Dropdown
+
 @dropdown-selected-color: @primary-color;
 @dropdown-menu-submenu-disabled-bg: @component-background;
 @dropdown-selected-bg: @item-active-bg;
@@ -565,6 +568,8 @@
 @anchor-bg: transparent;
 @anchor-border-color: @border-color-split;
 @anchor-link-top: 4px;
+// TAG
+// @anchor-link-left: 14px;
 @anchor-link-left: 16px;
 @anchor-link-padding: @anchor-link-top 0 @anchor-link-top @anchor-link-left;
 
@@ -651,7 +656,9 @@
 @menu-popup-bg: @component-background;
 @menu-item-color: @text-color;
 @menu-inline-submenu-bg: @background-color-light;
-@menu-highlight-color: @primary-color;
+// TAG
+// @menu-highlight-color: @primary-color;
+@menu-highlight-color: rgb(118, 69, 217);
 @menu-highlight-danger-color: @error-color;
 @menu-item-active-bg: @primary-1;
 @menu-item-active-danger-bg: @red-1;
@@ -779,6 +786,7 @@
 @badge-font-size: @font-size-sm;
 @badge-font-size-sm: @font-size-sm;
 @badge-font-weight: normal;
+// @badge-font-weight: 500;
 @badge-status-size: 6px;
 @badge-text-color: @component-background;
 @badge-color: @highlight-color;
@@ -1134,3 +1142,5 @@
 @segmented-selected-bg: @white;
 @segmented-label-color: fade(@black, 65%);
 @segmented-label-hover-color: #262626;
+
+// Custom
