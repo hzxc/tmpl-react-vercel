@@ -1,4 +1,4 @@
-import React, { ReactNode, useContext, useEffect } from 'react';
+import React, { ReactNode, useContext, useEffect, useState } from 'react';
 import * as auth from '../auth-provider';
 import { useAsync } from '../../utils/use-async';
 import { FullPageErrorFallback, FullPageLoading } from 'components/lib';
@@ -14,6 +14,8 @@ interface AuthContextProps {
   user: User | null;
   login: (form: AuthForm) => Promise<void>;
   logout: () => Promise<void>;
+  setTheme: (v: string) => void;
+  prefixCls: string;
 }
 
 const bootstrapUser = async () => {
@@ -43,6 +45,16 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     data: user,
     setData: setUser,
   } = useAsync<User | null>();
+  // let prefixCls = auth.getPrefixCls();
+  // prefixCls = prefixCls != null ? prefixCls : 'ant';
+
+  const [prefixCls, setPrefixCls] = useState('ant');
+
+  const setTheme = (v: string) => {
+    setPrefixCls(v);
+    auth.setPrefixCls(v);
+  };
+
   const login = (form: AuthForm) => auth.login(form).then(setUser);
   const logout = () =>
     auth.logout().then(() => {
@@ -51,6 +63,8 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     });
 
   useEffect(() => {
+    const prefix = auth.getPrefixCls();
+    setPrefixCls(prefix ? prefix : 'ant');
     run(bootstrapUser());
   }, [run]);
 
@@ -61,7 +75,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     return <FullPageErrorFallback error={error} />;
   }
 
-  return <AuthContext.Provider children={children} value={{ user, login, logout }} />;
+  return (
+    <AuthContext.Provider
+      children={children}
+      value={{ prefixCls, setTheme, user, login, logout }}
+    />
+  );
 };
 
 export const useAuth = () => {

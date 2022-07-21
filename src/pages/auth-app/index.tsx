@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import { Row } from 'components/lib';
-import { ReactComponent as SoftwareLogo } from 'assets/software-logo.svg';
-import { Button, Dropdown, Menu } from 'antd';
+import { ReactComponent as Logo } from 'assets/pancake/logo.svg';
+import { ReactComponent as LogoText } from 'assets/pancake/logo.text.svg';
+import { SettingOutlined, MailOutlined, LogoutOutlined } from '@ant-design/icons';
+
+import { Button, Dropdown, Menu, MenuProps } from 'antd';
 import { useAuth } from 'pages/context/auth-context';
 import { Route, Routes, Navigate } from 'react-router';
 import { Projects } from 'pages/projects';
@@ -10,6 +13,9 @@ import { Project } from 'pages/projects/project';
 import { TestDynamicTheme } from 'pages/test/dynamic-theme';
 import { Test } from 'pages/test';
 import { Link } from 'react-router-dom';
+import { AuthNavItems } from 'consts';
+
+import { Container, Main, Header, HeaderLeft, HeaderRight, Nav, PanMenu } from './index.style';
 function AuthApp() {
   return (
     <Container>
@@ -32,15 +38,27 @@ function AuthApp() {
 }
 
 const PageHeader = () => {
+  const items: MenuProps['items'] = AuthNavItems;
+
+  const [current, setCurrent] = useState('Swap');
+  const onClick: MenuProps['onClick'] = (e) => {
+    console.log('click ', e);
+    setCurrent(e.key);
+  };
+
   return (
     <Header between={true}>
-      <HeaderLeft gap={true}>
+      <HeaderLeft gap={2.4}>
         {/* <Button type={'link'} onClick={resetRoute}>
           <SoftwareLogo width={'18rem'} color={'rgb(38, 132, 255)'} />
         </Button> */}
         <Link to='/'>
-          <SoftwareLogo width={'18rem'} color={'rgb(38, 132, 255)'} />
+          {/* <Logo /> */}
+          <LogoText width={'16rem'} />
         </Link>
+        <Nav>
+          <PanMenu onClick={onClick} selectedKeys={[current]} mode='horizontal' items={items} />
+        </Nav>
       </HeaderLeft>
       <HeaderRight>
         <User />
@@ -59,33 +77,5 @@ const User = () => {
     </Dropdown>
   );
 };
-
-const Container = styled.div`
-  display: grid;
-  grid-template-rows: 6rem 1fr;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    'header'
-    'main';
-  height: 100vh;
-`;
-
-const Header = styled(Row)`
-  grid-area: header;
-  padding: 3.2rem;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  /* background-color: antiquewhite; */
-`;
-const HeaderLeft = styled(Row)``;
-const HeaderRight = styled.div``;
-const Main = styled.main`
-  grid-area: main;
-  /* background-color: aliceblue; */
-  /* display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  align-items: center; */
-`;
 
 export default AuthApp;
