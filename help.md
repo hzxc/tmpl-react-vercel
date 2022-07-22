@@ -6,10 +6,11 @@ D:/proj/hzxc.github.com/tmpl-react-vercel/node_modules/antd/lib/style/themes
 
 ### pancake
 
-- @font-size-base: 16px;
-- @primary-color: rgb(31, 199, 212);
-- @primary-color-hover: rgb(110, 219, 227);
-- @primary-color-active: rgb(65, 208, 219);
+```css
+.pancake-menu-horizontal:not(.pancake-menu-dark) > .pancake-menu-submenu-selected::after {
+  /* border-bottom: 2px solid #7645d9; */
+}
+```
 
 ## lessc
 

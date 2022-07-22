@@ -10,6 +10,10 @@ const UnauthApp = React.lazy(() => import('pages/unauth-app/index'));
 function App() {
   const { user, prefixCls } = useAuth();
 
+  // ConfigProvider.config({
+  //   theme: {},
+  // });
+
   return (
     <ConfigProvider prefixCls={prefixCls}>
       <div className='App'>

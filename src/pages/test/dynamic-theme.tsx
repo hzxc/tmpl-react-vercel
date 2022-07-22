@@ -9,11 +9,15 @@ import {
   RadioChangeEvent,
   Space,
   version,
+  Typography,
 } from 'antd';
 import { useAuth } from 'pages/context/auth-context';
 import { useState } from 'react';
 import { SettingOutlined, MailOutlined } from '@ant-design/icons';
 import styled from '@emotion/styled';
+
+const { Title, Text, Link } = Typography;
+
 export const TestDynamicTheme = () => {
   const { prefixCls: prefix, setTheme } = useAuth();
   // const { rootPrefixCls } = useContext(ConfigContext);
@@ -97,23 +101,21 @@ export const TestDynamicTheme = () => {
   };
   return (
     <Container>
-      <h1>
-        <Space>
-          Change Theme:
-          <Radio.Group onChange={handlePrefixChange} value={prefix}>
-            <Radio value='ant'>Ant Style</Radio>
-            <Radio value='pancake'>Pancake Style</Radio>
-          </Radio.Group>
-        </Space>
-      </h1>
-      <h1>antd version: {version}</h1>
+      <Space>
+        <Title level={2}>Change Theme:</Title>
+        <Radio.Group onChange={handlePrefixChange} value={prefix}>
+          <Radio value='ant'>Ant Style</Radio>
+          <Radio value='pancake'>Pancake Style</Radio>
+        </Radio.Group>
+      </Space>
+      <Title level={2}>antd version: {version}</Title>
       <DatePicker />
       <Button size='large' style={{ marginLeft: 8 }} type='primary'>
         Primary Button
       </Button>
-      <h1>Menu</h1>
+      <Title level={2}>Menu</Title>
       <Menu onClick={onClick} selectedKeys={[current]} mode='horizontal' items={items} />
-      <h1>Menu</h1>
+      <Title level={2}>Input</Title>
       <Input placeholder='Basic usage' />
     </Container>
   );

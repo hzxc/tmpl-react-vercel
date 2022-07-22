@@ -1,5 +1,5 @@
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
-@import '../color/colors';
+@import '../../node_modules/antd/lib/style/color/colors';
 
 @theme: variable;
 
@@ -139,20 +139,47 @@
   'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
   'Noto Color Emoji';
 @code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+// Pancake Custom *********
+
+@pancake-text-color: rgb(122, 110, 170);
+@pancake-highlight-color: rgb(118, 69, 217);
 // TAG
 // @text-color: fade(@black, 85%);
-@text-color: rgb(122, 110, 170);
-@text-color-secondary: fade(@black, 45%);
+// @text-color-secondary: fade(@black, 45%);
+// @heading-color: fade(@black, 85%);
+@text-color: fade(@pancake-text-color, 85%);
+@text-color-secondary: fade(@pancake-text-color, 45%);
+@heading-color: fade(@pancake-highlight-color, 85%);
+// TAG
+// @font-size-base: 14px;
+@font-size-base: 16px;
+// TAG
+// @menu-inline-toplevel-item-height: 40px;
+// @menu-item-height: 40px;
+@menu-inline-toplevel-item-height: 48px;
+@menu-item-height: 48px;
+// TAG
+// @menu-item-color: @text-color;
+@menu-item-color: @pancake-text-color;
+// TAG
+// @menu-highlight-color: @primary-color;
+@menu-highlight-color: @pancake-highlight-color;
+// TAG
+// @menu-item-padding-horizontal: 20px;
+@menu-item-padding-horizontal: 16px;
+// Pancake End...
+
 @text-color-inverse: @white;
 @icon-color: inherit;
 @icon-color-hover: fade(@black, 75%);
-@heading-color: fade(@black, 85%);
+
 @text-color-dark: fade(@white, 85%);
 @text-color-secondary-dark: fade(@white, 65%);
 @text-selection-bg: @primary-color;
 @font-variant-base: tabular-nums;
 @font-feature-settings-base: 'tnum';
-@font-size-base: 16px;
+
 @font-size-lg: @font-size-base + 2px;
 @font-size-sm: 12px;
 @heading-1-size: ceil(@font-size-base * 2.71);
@@ -568,9 +595,7 @@
 @anchor-bg: transparent;
 @anchor-border-color: @border-color-split;
 @anchor-link-top: 4px;
-// TAG
-// @anchor-link-left: 14px;
-@anchor-link-left: 16px;
+@anchor-link-left: 14px;
 @anchor-link-padding: @anchor-link-top 0 @anchor-link-top @anchor-link-left;
 
 // Tooltip
@@ -648,17 +673,14 @@
 @progress-circle-text-font-size: 1em;
 // Menu
 // ---
-@menu-inline-toplevel-item-height: 40px;
-@menu-item-height: 40px;
+
 @menu-item-group-height: @line-height-base;
 @menu-collapsed-width: 80px;
 @menu-bg: @component-background;
 @menu-popup-bg: @component-background;
-@menu-item-color: @text-color;
+
 @menu-inline-submenu-bg: @background-color-light;
-// TAG
-// @menu-highlight-color: @primary-color;
-@menu-highlight-color: rgb(118, 69, 217);
+
 @menu-highlight-danger-color: @error-color;
 @menu-item-active-bg: @primary-1;
 @menu-item-active-danger-bg: @red-1;
@@ -667,7 +689,7 @@
 @menu-item-vertical-margin: 4px;
 @menu-item-font-size: @font-size-base;
 @menu-item-boundary-margin: 8px;
-@menu-item-padding-horizontal: 20px;
+
 @menu-item-padding: 0 @menu-item-padding-horizontal;
 @menu-horizontal-line-height: 46px;
 @menu-icon-margin-right: 10px;

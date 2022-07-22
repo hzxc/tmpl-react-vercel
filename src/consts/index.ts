@@ -2,7 +2,6 @@ export const AuthNavItems = [
   {
     label: 'Trade',
     key: 'Trade',
-    popupClassName: '',
     children: [
       {
         label: 'Swap',
@@ -72,8 +71,42 @@ export const AuthNavItems = [
       },
     ],
   },
+  // {
+  //   label: 'info',
+  //   key: 'info',
+  // },
+  // {
+  //   label: 'IFO',
+  //   key: 'IFO',
+  // },
+  // {
+  //   label: 'Voting',
+  //   key: 'Voting',
+  // },
+  // {
+  //   type: 'divider',
+  //   label: 'divider',
+  //   key: 'divider',
+  // },
+  // {
+  //   label: 'Leaderboard',
+  //   key: 'Leaderboard',
+  // },
+  // {
+  //   type: 'divider',
+  //   label: 'divider1',
+  //   key: 'divider1',
+  // },
+  // {
+  //   label: 'Blog',
+  //   key: 'Blog',
+  // },
+  // {
+  //   label: 'Docs',
+  //   key: 'Docs',
+  // },
   {
-    label: '···',
+    label: '•••',
     key: '···',
     children: [
       {

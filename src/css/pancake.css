@@ -1,3 +1,5 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
+/* stylelint-disable at-rule-no-unknown */
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable */
@@ -80,7 +82,7 @@ html {
 }
 body {
   margin: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-variant: tabular-nums;
@@ -104,7 +106,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5em;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 500;
 }
 p {
@@ -238,7 +240,7 @@ table {
 caption {
   padding-top: 0.75em;
   padding-bottom: 0.3em;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   text-align: left;
   caption-side: bottom;
 }
@@ -353,6 +355,49 @@ mark {
   display: table;
   clear: both;
   content: '';
+}
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+html {
+  --pancake-primary-color: #1890ff;
+  --pancake-primary-color-hover: #40a9ff;
+  --pancake-primary-color-active: #096dd9;
+  --pancake-primary-color-outline: rgba(24, 144, 255, 0.2);
+  --pancake-primary-1: #e6f7ff;
+  --pancake-primary-2: #bae7ff;
+  --pancake-primary-3: #91d5ff;
+  --pancake-primary-4: #69c0ff;
+  --pancake-primary-5: #40a9ff;
+  --pancake-primary-6: #1890ff;
+  --pancake-primary-7: #096dd9;
+  --pancake-primary-color-deprecated-pure: ;
+  --pancake-primary-color-deprecated-l-35: #cbe6ff;
+  --pancake-primary-color-deprecated-l-20: #7ec1ff;
+  --pancake-primary-color-deprecated-t-20: #46a6ff;
+  --pancake-primary-color-deprecated-t-50: #8cc8ff;
+  --pancake-primary-color-deprecated-f-12: rgba(24, 144, 255, 0.12);
+  --pancake-primary-color-active-deprecated-f-30: rgba(230, 247, 255, 0.3);
+  --pancake-primary-color-active-deprecated-d-02: #dcf4ff;
+  --pancake-success-color: #52c41a;
+  --pancake-success-color-hover: #73d13d;
+  --pancake-success-color-active: #389e0d;
+  --pancake-success-color-outline: rgba(82, 196, 26, 0.2);
+  --pancake-success-color-deprecated-bg: #f6ffed;
+  --pancake-success-color-deprecated-border: #b7eb8f;
+  --pancake-error-color: #ff4d4f;
+  --pancake-error-color-hover: #ff7875;
+  --pancake-error-color-active: #d9363e;
+  --pancake-error-color-outline: rgba(255, 77, 79, 0.2);
+  --pancake-error-color-deprecated-bg: #fff2f0;
+  --pancake-error-color-deprecated-border: #ffccc7;
+  --pancake-warning-color: #faad14;
+  --pancake-warning-color-hover: #ffc53d;
+  --pancake-warning-color-active: #d48806;
+  --pancake-warning-color-outline: rgba(250, 173, 20, 0.2);
+  --pancake-warning-color-deprecated-bg: #fffbe6;
+  --pancake-warning-color-deprecated-border: #ffe58f;
+  --pancake-info-color: #1890ff;
+  --pancake-info-color-deprecated-bg: #e6f7ff;
+  --pancake-info-color-deprecated-border: #91d5ff;
 }
 .anticon {
   display: inline-block;
@@ -1282,7 +1327,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -1354,14 +1399,14 @@ html {
   cursor: pointer;
 }
 .pancake-alert-close-icon .anticon-close {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   transition: color 0.3s;
 }
 .pancake-alert-close-icon .anticon-close:hover {
   color: rgba(0, 0, 0, 0.75);
 }
 .pancake-alert-close-text {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   transition: color 0.3s;
 }
 .pancake-alert-close-text:hover {
@@ -1381,11 +1426,11 @@ html {
 .pancake-alert-with-description .pancake-alert-message {
   display: block;
   margin-bottom: 4px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-size: 18px;
 }
 .pancake-alert-message {
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
 }
 .pancake-alert-with-description .pancake-alert-description {
   display: block;
@@ -1434,7 +1479,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -1483,14 +1528,14 @@ html {
   display: none;
 }
 .pancake-anchor-link {
-  padding: 4px 0 4px 16px;
+  padding: 4px 0 4px 14px;
 }
 .pancake-anchor-link-title {
   position: relative;
   display: block;
   margin-bottom: 3px;
   overflow: hidden;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   white-space: nowrap;
   text-overflow: ellipsis;
   transition: all 0.3s;
@@ -1524,13 +1569,13 @@ html {
   transform: translateX(50%);
 }
 .pancake-anchor-rtl .pancake-anchor-link {
-  padding: 4px 16px 4px 0;
+  padding: 4px 14px 4px 0;
 }
 .pancake-select-auto-complete {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -1544,7 +1589,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -1647,7 +1692,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -1675,12 +1720,12 @@ html {
   overflow: hidden;
   color: #fff;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(122, 110, 170, 0.45);
   border-radius: 20px;
   transition: all 0.3s;
 }
 .pancake-back-top-content:hover {
-  background-color: #7a6eaa;
+  background-color: rgba(122, 110, 170, 0.85);
   transition: all 0.3s;
 }
 .pancake-back-top-icon {
@@ -1709,7 +1754,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -1856,7 +1901,7 @@ html {
 }
 .pancake-badge-status-text {
   margin-left: 8px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
 }
 .pancake-badge-zoom-appear,
@@ -1976,7 +2021,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -2165,12 +2210,12 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-variant: tabular-nums;
   line-height: 1.5715;
   list-style: none;
   font-feature-settings: 'tnum';
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
 }
 .pancake-breadcrumb .anticon {
@@ -2184,24 +2229,24 @@ html {
   list-style: none;
 }
 .pancake-breadcrumb a {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   transition: color 0.3s;
 }
 .pancake-breadcrumb a:hover {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-breadcrumb li:last-child {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-breadcrumb li:last-child a {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 li:last-child > .pancake-breadcrumb-separator {
   display: none;
 }
 .pancake-breadcrumb-separator {
   margin: 0 8px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-breadcrumb-link > .anticon + span,
 .pancake-breadcrumb-link > .anticon + a {
@@ -2261,7 +2306,7 @@ li:last-child > .pancake-breadcrumb-separator {
   padding: 2.4px 15px;
   font-size: 16px;
   border-radius: 2px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   border-color: #d9d9d9;
   background: #fff;
 }
@@ -2490,7 +2535,7 @@ li:last-child > .pancake-breadcrumb-separator {
   border-left-color: #d9d9d9;
 }
 .pancake-btn-ghost {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   border-color: #d9d9d9;
   background: transparent;
 }
@@ -2572,7 +2617,7 @@ li:last-child > .pancake-breadcrumb-separator {
   content: '';
 }
 .pancake-btn-dashed {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   border-color: #d9d9d9;
   background: #fff;
   border-style: dashed;
@@ -2858,7 +2903,7 @@ li:last-child > .pancake-breadcrumb-separator {
   content: '';
 }
 .pancake-btn-text {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   border-color: transparent;
   background: transparent;
   box-shadow: none;
@@ -2942,12 +2987,12 @@ li:last-child > .pancake-breadcrumb-separator {
 }
 .pancake-btn-text:hover,
 .pancake-btn-text:focus {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   background: rgba(0, 0, 0, 0.018);
   border-color: transparent;
 }
 .pancake-btn-text:active {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   background: rgba(0, 0, 0, 0.028);
   border-color: transparent;
 }
@@ -4132,7 +4177,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -4249,7 +4294,7 @@ a.pancake-btn-sm {
   width: auto;
   height: 86px;
   overflow-y: auto;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   line-height: 1.5715;
   text-align: left;
 }
@@ -4257,7 +4302,7 @@ a.pancake-btn-sm {
   border-color: var(--pancake-primary-color);
 }
 .pancake-picker-calendar-full .pancake-picker-panel .pancake-picker-calendar-date-today .pancake-picker-calendar-date-value {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 @media only screen and (max-width: 480px) {
   .pancake-picker-calendar-header {
@@ -4303,7 +4348,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -4331,7 +4376,7 @@ a.pancake-btn-sm {
   min-height: 48px;
   margin-bottom: -1px;
   padding: 0 24px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 500;
   font-size: 18px;
   background: transparent;
@@ -4377,7 +4422,7 @@ a.pancake-btn-sm {
 .pancake-card-head .pancake-tabs-top {
   clear: both;
   margin-bottom: -17px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: normal;
   font-size: 16px;
 }
@@ -4387,7 +4432,7 @@ a.pancake-btn-sm {
 .pancake-card-extra {
   margin-left: auto;
   padding: 16px 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: normal;
   font-size: 16px;
 }
@@ -4484,7 +4529,7 @@ a.pancake-btn-sm {
 }
 .pancake-card-actions > li {
   margin: 12px 0;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   text-align: center;
 }
 .pancake-card-actions > li > span {
@@ -4503,7 +4548,7 @@ a.pancake-btn-sm {
 .pancake-card-actions > li > span > .anticon {
   display: inline-block;
   width: 100%;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   line-height: 22px;
   transition: color 0.3s;
 }
@@ -4573,14 +4618,14 @@ a.pancake-btn-sm {
 }
 .pancake-card-meta-title {
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 500;
   font-size: 18px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .pancake-card-meta-description {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-card-loading {
   overflow: hidden;
@@ -4607,7 +4652,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -4891,7 +4936,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -5014,7 +5059,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -5049,7 +5094,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -5165,7 +5210,7 @@ a.pancake-btn-sm {
 .pancake-cascader-menu-item-expand .pancake-cascader-menu-item-expand-icon,
 .pancake-cascader-menu-item-loading-icon {
   margin-left: 4px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 10px;
 }
 .pancake-cascader-menu-item-disabled.pancake-cascader-menu-item-expand .pancake-cascader-menu-item-expand-icon,
@@ -5189,7 +5234,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -5312,7 +5357,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -5347,7 +5392,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -5400,7 +5445,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -5424,7 +5469,7 @@ a.pancake-btn-sm {
   flex-wrap: nowrap;
   align-items: flex-start;
   padding: 12px 16px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   line-height: 1.5715;
   cursor: pointer;
   transition: all 0.3s, visibility 0s;
@@ -5467,7 +5512,7 @@ a.pancake-btn-sm {
   transform: translateY(-50%);
 }
 .pancake-collapse-content {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   background-color: #fff;
   border-top: 1px solid #d9d9d9;
 }
@@ -5596,15 +5641,15 @@ a.pancake-btn-sm {
   line-height: 18px;
 }
 .pancake-comment-content-author-name {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
   transition: color 0.3s;
 }
 .pancake-comment-content-author-name > * {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-comment-content-author-name > *:hover {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-comment-content-author-time {
   color: #ccc;
@@ -5622,11 +5667,11 @@ a.pancake-btn-sm {
 }
 .pancake-comment-actions > li {
   display: inline-block;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-comment-actions > li > span {
   margin-right: 10px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 12px;
   cursor: pointer;
   transition: color 0.3s;
@@ -5695,7 +5740,7 @@ a.pancake-btn-sm {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -5755,7 +5800,7 @@ a.pancake-btn-sm {
   width: 100%;
   min-width: 0;
   padding: 3px 11px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   line-height: 1.5715;
   background-color: #fff;
@@ -5901,7 +5946,7 @@ textarea.pancake-picker-input > input {
   vertical-align: top;
 }
 .pancake-picker-clear:hover {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-picker-separator {
   position: relative;
@@ -5914,7 +5959,7 @@ textarea.pancake-picker-input > input {
   cursor: default;
 }
 .pancake-picker-focused .pancake-picker-separator {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-picker-disabled .pancake-picker-range-separator .pancake-picker-separator {
   cursor: not-allowed;
@@ -5956,7 +6001,7 @@ textarea.pancake-picker-input > input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -6110,7 +6155,7 @@ textarea.pancake-picker-input > input {
 .pancake-picker-header {
   display: flex;
   padding: 0 8px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 .pancake-picker-header > * {
@@ -6130,7 +6175,7 @@ textarea.pancake-picker-input > input {
   font-size: 16px;
 }
 .pancake-picker-header > button:hover {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-picker-header-view {
   flex: auto;
@@ -6203,7 +6248,7 @@ textarea.pancake-picker-input > input {
 }
 .pancake-picker-content th {
   height: 30px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   line-height: 30px;
 }
 .pancake-picker-cell {
@@ -6212,7 +6257,7 @@ textarea.pancake-picker-input > input {
   cursor: pointer;
 }
 .pancake-picker-cell-in-view {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-picker-cell::before {
   position: absolute;
@@ -6563,7 +6608,7 @@ tr > .pancake-picker-cell-in-view.pancake-picker-cell-range-hover-start:last-chi
   height: 28px;
   margin: 0;
   padding: 0 0 0 14px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   line-height: 28px;
   border-radius: 0;
   cursor: pointer;
@@ -6727,7 +6772,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 .pancake-descriptions-title {
   flex: auto;
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: bold;
   font-size: 18px;
   line-height: 1.5715;
@@ -6736,7 +6781,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 }
 .pancake-descriptions-extra {
   margin-left: auto;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
 }
 .pancake-descriptions-view {
@@ -6755,7 +6800,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   border-bottom: none;
 }
 .pancake-descriptions-item-label {
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: normal;
   font-size: 16px;
   line-height: 1.5715;
@@ -6777,7 +6822,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 .pancake-descriptions-item-content {
   display: table-cell;
   flex: 1;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   line-height: 1.5715;
   word-break: break-word;
@@ -6858,7 +6903,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -6886,7 +6931,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 .pancake-divider-horizontal.pancake-divider-with-text {
   display: flex;
   margin: 16px 0;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 500;
   font-size: 18px;
   white-space: nowrap;
@@ -6939,7 +6984,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   border-width: 0 0 0 1px;
 }
 .pancake-divider-plain.pancake-divider-with-text {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: normal;
   font-size: 16px;
 }
@@ -7074,7 +7119,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 .pancake-drawer-title {
   flex: 1;
   margin: 0;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -7090,7 +7135,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 .pancake-drawer-close {
   display: inline-block;
   margin-right: 12px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -7116,7 +7161,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   align-items: center;
   justify-content: space-between;
   padding: 16px 24px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 2px 2px 0 0;
@@ -7190,7 +7235,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -7309,7 +7354,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 }
 .pancake-dropdown-menu-item-group-title {
   padding: 5px 12px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   transition: all 0.3s;
 }
 .pancake-dropdown-menu-submenu-popup {
@@ -7360,7 +7405,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   clear: both;
   margin: 0;
   padding: 5px 12px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -7411,7 +7456,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 .pancake-dropdown-menu-item .pancake-dropdown-menu-submenu-expand-icon .pancake-dropdown-menu-submenu-arrow-icon,
 .pancake-dropdown-menu-submenu-title .pancake-dropdown-menu-submenu-expand-icon .pancake-dropdown-menu-submenu-arrow-icon {
   margin-right: 0 !important;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 10px;
   font-style: normal;
 }
@@ -7845,7 +7890,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -7857,7 +7902,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   width: 100%;
   margin-bottom: 20px;
   padding: 0;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 18px;
   line-height: inherit;
   border: 0;
@@ -7894,7 +7939,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 .pancake-form output {
   display: block;
   padding-top: 15px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   line-height: 1.5715;
 }
@@ -7918,7 +7963,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -7958,7 +8003,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   align-items: center;
   max-width: 100%;
   height: 32px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-size: 16px;
 }
 .pancake-form-item-label > label > .anticon {
@@ -7980,13 +8025,13 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 .pancake-form-item-label > label .pancake-form-item-optional {
   display: inline-block;
   margin-left: 4px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-form-hide-required-mark .pancake-form-item-label > label .pancake-form-item-optional {
   display: none;
 }
 .pancake-form-item-label > label .pancake-form-item-tooltip {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   cursor: help;
   writing-mode: horizontal-tb;
   margin-inline-start: 4px;
@@ -8021,7 +8066,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
 .pancake-form-item-explain,
 .pancake-form-item-extra {
   clear: both;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
   line-height: 1.5715;
   transition: color 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -13511,7 +13556,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -13592,7 +13637,7 @@ _:-ms-fullscreen .pancake-picker-range-wrapper .pancake-picker-year-panel .panca
   width: 100%;
   min-width: 0;
   padding: 3px 11px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   line-height: 1.5715;
   background-color: #fff;
@@ -13724,7 +13769,7 @@ textarea.pancake-input-affix-wrapper {
   margin-right: 8px;
 }
 .pancake-input-show-count-suffix {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-input-show-count-has-suffix {
   margin-right: 2px;
@@ -13746,11 +13791,11 @@ textarea.pancake-input-affix-wrapper {
 }
 .anticon.pancake-input-clear-icon:hover,
 .pancake-input-clear-icon:hover {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .anticon.pancake-input-clear-icon:active,
 .pancake-input-clear-icon:active {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .anticon.pancake-input-clear-icon-hidden,
 .pancake-input-clear-icon-hidden {
@@ -13856,7 +13901,7 @@ textarea.pancake-input-affix-wrapper {
   width: 100%;
   min-width: 0;
   padding: 3px 11px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   line-height: 1.5715;
   background-color: #fff;
@@ -13948,7 +13993,7 @@ textarea.pancake-input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -14010,7 +14055,7 @@ textarea.pancake-input {
 .pancake-input-group-addon {
   position: relative;
   padding: 0 11px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: normal;
   font-size: 16px;
   text-align: center;
@@ -14284,7 +14329,7 @@ textarea.pancake-input {
   vertical-align: top;
 }
 .pancake-input-password-icon.anticon {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -14307,7 +14352,7 @@ textarea.pancake-input {
 }
 .pancake-input-textarea-show-count::after {
   float: right;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   white-space: nowrap;
   content: attr(data-count);
   pointer-events: none;
@@ -14350,7 +14395,7 @@ textarea.pancake-input {
   border-radius: 0 2px 2px 0;
 }
 .pancake-input-search > .pancake-input-group > .pancake-input-group-addon:last-child .pancake-input-search-button:not(.pancake-btn-primary) {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-input-search > .pancake-input-group > .pancake-input-group-addon:last-child .pancake-input-search-button:not(.pancake-btn-primary).pancake-btn-loading::before {
   top: 0;
@@ -14439,7 +14484,7 @@ textarea.pancake-input {
   width: 100%;
   min-width: 0;
   padding: 3px 11px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   line-height: 1.5715;
   background-color: #fff;
@@ -14666,7 +14711,7 @@ textarea.pancake-input-number-affix-wrapper {
   width: 100%;
   min-width: 0;
   padding: 3px 11px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   line-height: 1.5715;
   background-color: #fff;
@@ -14762,7 +14807,7 @@ textarea.pancake-input-number {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -14824,7 +14869,7 @@ textarea.pancake-input-number {
 .pancake-input-number-group-addon {
   position: relative;
   padding: 0 11px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: normal;
   font-size: 16px;
   text-align: center;
@@ -15102,7 +15147,7 @@ textarea.pancake-input-number {
   width: 100%;
   height: 50%;
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-weight: bold;
   line-height: 0;
   text-align: center;
@@ -15132,7 +15177,7 @@ textarea.pancake-input-number {
   right: 4px;
   width: 12px;
   height: 12px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   line-height: 12px;
   transition: all 0.1s linear;
   user-select: none;
@@ -15357,13 +15402,13 @@ textarea.pancake-input-number {
 .pancake-layout-header {
   height: 64px;
   padding: 0 50px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   line-height: 64px;
   background: #001529;
 }
 .pancake-layout-footer {
   padding: 24px 50px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   background: #f0f2f5;
 }
@@ -15445,11 +15490,11 @@ textarea.pancake-input-number {
   background: #fff;
 }
 .pancake-layout-sider-light .pancake-layout-sider-trigger {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   background: #fff;
 }
 .pancake-layout-sider-light .pancake-layout-sider-zero-width-trigger {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   background: #fff;
 }
 .pancake-layout-rtl {
@@ -15459,7 +15504,7 @@ textarea.pancake-input-number {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -15505,7 +15550,7 @@ textarea.pancake-input-number {
   align-items: center;
   justify-content: space-between;
   padding: 12px 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-list-item-meta {
   display: flex;
@@ -15519,23 +15564,23 @@ textarea.pancake-input-number {
 .pancake-list-item-meta-content {
   flex: 1 0;
   width: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-list-item-meta-title {
   margin-bottom: 4px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   line-height: 1.5715;
 }
 .pancake-list-item-meta-title > a {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   transition: all 0.3s;
 }
 .pancake-list-item-meta-title > a:hover {
   color: var(--pancake-primary-color);
 }
 .pancake-list-item-meta-description {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
   line-height: 1.5715;
 }
@@ -15550,7 +15595,7 @@ textarea.pancake-input-number {
   position: relative;
   display: inline-block;
   padding: 0 8px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
   line-height: 1.5715;
   text-align: center;
@@ -15580,7 +15625,7 @@ textarea.pancake-input-number {
 }
 .pancake-list-empty {
   padding: 16px 0;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 12px;
   text-align: center;
 }
@@ -15623,7 +15668,7 @@ textarea.pancake-input-number {
 }
 .pancake-list-vertical .pancake-list-item-meta-title {
   margin-bottom: 12px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-size: 18px;
   line-height: 24px;
 }
@@ -15807,7 +15852,7 @@ textarea.pancake-input-number {
   width: 100%;
   min-width: 0;
   padding: 3px 11px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   background-color: #fff;
   background-image: none;
@@ -15981,7 +16026,7 @@ textarea.pancake-mentions {
 .pancake-mentions-dropdown {
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-variant: tabular-nums;
   line-height: 1.5715;
   list-style: none;
@@ -16015,7 +16060,7 @@ textarea.pancake-mentions {
   min-width: 100px;
   padding: 5px 12px;
   overflow: hidden;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: normal;
   line-height: 1.5715;
   white-space: nowrap;
@@ -16042,7 +16087,7 @@ textarea.pancake-mentions {
   cursor: not-allowed;
 }
 .pancake-mentions-dropdown-menu-item-selected {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: 600;
   background-color: #fafafa;
 }
@@ -16098,6 +16143,7 @@ textarea.pancake-mentions {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: rgba(122, 110, 170, 0.85);
   font-variant: tabular-nums;
   line-height: 1.5715;
   font-feature-settings: 'tnum';
@@ -16153,7 +16199,7 @@ textarea.pancake-mentions {
 .pancake-menu-item-group-title {
   height: 1.5715;
   padding: 8px 16px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
   line-height: 1.5715;
   transition: all 0.3s;
@@ -16284,7 +16330,7 @@ textarea.pancake-mentions {
   position: relative;
   display: block;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 16px;
   white-space: nowrap;
   cursor: pointer;
   transition: border-color 0.3s, background 0.3s, padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -16422,7 +16468,7 @@ textarea.pancake-mentions {
 .pancake-menu-horizontal:not(.pancake-menu-dark) > .pancake-menu-submenu {
   margin-top: -1px;
   margin-bottom: 0;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 .pancake-menu-horizontal:not(.pancake-menu-dark) > .pancake-menu-item:hover,
 .pancake-menu-horizontal:not(.pancake-menu-dark) > .pancake-menu-submenu:hover,
@@ -16454,9 +16500,9 @@ textarea.pancake-mentions {
 .pancake-menu-horizontal > .pancake-menu-item::after,
 .pancake-menu-horizontal > .pancake-menu-submenu::after {
   position: absolute;
-  right: 20px;
+  right: 16px;
   bottom: 0;
-  left: 20px;
+  left: 16px;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   content: '';
@@ -16510,12 +16556,12 @@ textarea.pancake-mentions {
 .pancake-menu-vertical-left .pancake-menu-submenu-title,
 .pancake-menu-vertical-right .pancake-menu-submenu-title,
 .pancake-menu-inline .pancake-menu-submenu-title {
-  height: 40px;
+  height: 48px;
   margin-top: 4px;
   margin-bottom: 4px;
   padding: 0 16px;
   overflow: hidden;
-  line-height: 40px;
+  line-height: 48px;
   text-overflow: ellipsis;
 }
 .pancake-menu-vertical .pancake-menu-submenu,
@@ -16538,8 +16584,8 @@ textarea.pancake-mentions {
 .pancake-menu-vertical-left > .pancake-menu-submenu > .pancake-menu-submenu-title,
 .pancake-menu-vertical-right > .pancake-menu-submenu > .pancake-menu-submenu-title,
 .pancake-menu-inline > .pancake-menu-submenu > .pancake-menu-submenu-title {
-  height: 40px;
-  line-height: 40px;
+  height: 48px;
+  line-height: 48px;
 }
 .pancake-menu-vertical .pancake-menu-item-group-list .pancake-menu-submenu-title,
 .pancake-menu-vertical .pancake-menu-submenu-title {
@@ -16606,7 +16652,7 @@ textarea.pancake-mentions {
 .pancake-menu.pancake-menu-inline-collapsed > .pancake-menu-submenu > .pancake-menu-submenu-title .anticon {
   margin: 0;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 48px;
 }
 .pancake-menu.pancake-menu-inline-collapsed > .pancake-menu-item .pancake-menu-item-icon + span,
 .pancake-menu.pancake-menu-inline-collapsed > .pancake-menu-item-group > .pancake-menu-item-group-list > .pancake-menu-item .pancake-menu-item-icon + span,
@@ -16668,8 +16714,8 @@ textarea.pancake-mentions {
 }
 .pancake-menu-sub.pancake-menu-inline > .pancake-menu-item,
 .pancake-menu-sub.pancake-menu-inline > .pancake-menu-submenu > .pancake-menu-submenu-title {
-  height: 40px;
-  line-height: 40px;
+  height: 48px;
+  line-height: 48px;
   list-style-position: inside;
   list-style-type: disc;
 }
@@ -16756,7 +16802,7 @@ textarea.pancake-mentions {
 .pancake-menu-dark.pancake-menu-horizontal > .pancake-menu-submenu {
   top: 0;
   margin-top: 0;
-  padding: 0 20px;
+  padding: 0 16px;
   border-color: #001529;
   border-bottom: 0;
 }
@@ -16991,7 +17037,7 @@ textarea.pancake-mentions {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -17065,7 +17111,7 @@ textarea.pancake-mentions {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -17113,7 +17159,7 @@ textarea.pancake-mentions {
 }
 .pancake-modal-title {
   margin: 0;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -17134,7 +17180,7 @@ textarea.pancake-mentions {
   right: 0;
   z-index: 10;
   padding: 0;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
@@ -17162,7 +17208,7 @@ textarea.pancake-mentions {
 }
 .pancake-modal-header {
   padding: 16px 24px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 2px 2px 0 0;
@@ -17240,14 +17286,14 @@ textarea.pancake-mentions {
 .pancake-modal-confirm-body .pancake-modal-confirm-title {
   display: block;
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.4;
 }
 .pancake-modal-confirm-body .pancake-modal-confirm-content {
   margin-top: 8px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
 }
 .pancake-modal-confirm-body > .anticon {
@@ -17319,7 +17365,7 @@ textarea.pancake-mentions {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -17362,7 +17408,7 @@ textarea.pancake-mentions {
 }
 .pancake-notification-notice-message {
   margin-bottom: 8px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-size: 18px;
   line-height: 24px;
 }
@@ -17414,11 +17460,11 @@ textarea.pancake-mentions {
   position: absolute;
   top: 16px;
   right: 22px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   outline: none;
 }
 .pancake-notification-notice-close:hover {
-  color: rgba(0, 0, 0, 0.67);
+  color: rgba(37, 33, 52, 0.67);
 }
 .pancake-notification-notice-btn {
   float: right;
@@ -17561,7 +17607,7 @@ textarea.pancake-mentions {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -17621,7 +17667,7 @@ textarea.pancake-mentions {
 .pancake-page-header-heading-title {
   margin-right: 12px;
   margin-bottom: 0;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 600;
   font-size: 23px;
   line-height: 32px;
@@ -17634,7 +17680,7 @@ textarea.pancake-mentions {
 }
 .pancake-page-header-heading-sub-title {
   margin-right: 12px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 14px;
   line-height: 1.5715;
   overflow: hidden;
@@ -17709,7 +17755,7 @@ textarea.pancake-mentions {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -17757,7 +17803,7 @@ textarea.pancake-mentions {
 .pancake-pagination-item a {
   display: block;
   padding: 0 6px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   transition: none;
 }
 .pancake-pagination-item a:hover {
@@ -17866,7 +17912,7 @@ textarea.pancake-mentions {
   display: inline-block;
   min-width: 32px;
   height: 32px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   line-height: 32px;
   text-align: center;
@@ -17883,7 +17929,7 @@ textarea.pancake-mentions {
 }
 .pancake-pagination-prev button,
 .pancake-pagination-next button {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   cursor: pointer;
   user-select: none;
 }
@@ -17964,7 +18010,7 @@ textarea.pancake-mentions {
   width: 100%;
   min-width: 0;
   padding: 3px 11px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   line-height: 1.5715;
   background-color: #fff;
@@ -18248,7 +18294,7 @@ textarea.pancake-pagination-options-quick-jumper input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -18315,18 +18361,18 @@ textarea.pancake-pagination-options-quick-jumper input {
   min-height: 32px;
   margin: 0;
   padding: 5px 16px 4px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 500;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 .pancake-popover-inner-content {
   padding: 12px 16px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-popover-message {
   position: relative;
   padding: 4px 0 12px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
 }
 .pancake-popover-message > .anticon {
@@ -18568,7 +18614,7 @@ textarea.pancake-pagination-options-quick-jumper input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -18648,7 +18694,7 @@ textarea.pancake-pagination-options-quick-jumper input {
   display: inline-block;
   width: 2em;
   margin-left: 8px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 1em;
   line-height: 1;
   white-space: nowrap;
@@ -18701,7 +18747,7 @@ textarea.pancake-pagination-options-quick-jumper input {
   width: 100%;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 1em;
   line-height: 1;
   white-space: normal;
@@ -18754,7 +18800,7 @@ textarea.pancake-pagination-options-quick-jumper input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -18773,7 +18819,7 @@ textarea.pancake-pagination-options-quick-jumper input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -18802,7 +18848,7 @@ textarea.pancake-pagination-options-quick-jumper input {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -18919,7 +18965,7 @@ span.pancake-radio + * {
   height: 32px;
   margin: 0;
   padding: 0 15px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   line-height: 30px;
   background: #fff;
@@ -18930,7 +18976,7 @@ span.pancake-radio + * {
   transition: color 0.3s, background 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 .pancake-radio-button-wrapper a {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-radio-button-wrapper > .pancake-radio-button {
   position: absolute;
@@ -19097,7 +19143,7 @@ span.pancake-radio + * {
 }
 .pancake-rate {
   box-sizing: border-box;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -19210,13 +19256,13 @@ span.pancake-radio + * {
   font-size: 72px;
 }
 .pancake-result-title {
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-size: 24px;
   line-height: 1.8;
   text-align: center;
 }
 .pancake-result-subtitle {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
@@ -19267,7 +19313,7 @@ span.pancake-radio + * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -19568,7 +19614,7 @@ span.pancake-radio + * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-weight: bold;
   font-size: 10px;
   line-height: inherit;
@@ -19711,7 +19757,7 @@ span.pancake-radio + * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -19882,7 +19928,7 @@ span.pancake-radio + * {
   display: block;
 }
 .pancake-select-clear:hover {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-select:hover .pancake-select-clear {
   opacity: 1;
@@ -19890,7 +19936,7 @@ span.pancake-radio + * {
 .pancake-select-dropdown {
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-variant: tabular-nums;
   line-height: 1.5715;
   list-style: none;
@@ -19934,7 +19980,7 @@ span.pancake-radio + * {
   display: block;
   min-height: 32px;
   padding: 5px 12px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -19945,7 +19991,7 @@ span.pancake-radio + * {
   display: block;
   min-height: 32px;
   padding: 5px 12px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -19953,7 +19999,7 @@ span.pancake-radio + * {
   transition: background 0.3s ease;
 }
 .pancake-select-item-group {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 12px;
   cursor: default;
 }
@@ -19973,7 +20019,7 @@ span.pancake-radio + * {
   background-color: #f5f5f5;
 }
 .pancake-select-item-option-selected:not(.pancake-select-item-option-disabled) {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: 600;
   background-color: var(--pancake-primary-1);
 }
@@ -20336,7 +20382,7 @@ span.pancake-radio + * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -20471,14 +20517,14 @@ span.pancake-radio + * {
 .pancake-slider-mark-text {
   position: absolute;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   text-align: center;
   word-break: keep-all;
   cursor: pointer;
   user-select: none;
 }
 .pancake-slider-mark-text-active {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-slider-step {
   position: absolute;
@@ -20555,7 +20601,7 @@ span.pancake-radio + * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -20652,7 +20698,7 @@ span.pancake-radio + * {
   pointer-events: auto;
 }
 .pancake-spin-tip {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-spin-dot {
   position: relative;
@@ -20746,7 +20792,7 @@ span.pancake-radio + * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -20755,14 +20801,14 @@ span.pancake-radio + * {
 }
 .pancake-statistic-title {
   margin-bottom: 4px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
 }
 .pancake-statistic-skeleton {
   padding-top: 16px;
 }
 .pancake-statistic-content {
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-size: 24px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
@@ -20795,7 +20841,7 @@ span.pancake-radio + * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -20866,7 +20912,7 @@ span.pancake-radio + * {
   position: relative;
   display: inline-block;
   padding-right: 16px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 18px;
   line-height: 32px;
 }
@@ -20883,12 +20929,12 @@ span.pancake-radio + * {
 .pancake-steps-item-subtitle {
   display: inline;
   margin-left: 8px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-weight: normal;
   font-size: 16px;
 }
 .pancake-steps-item-description {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
 }
 .pancake-steps-item-wait .pancake-steps-item-icon {
@@ -20902,13 +20948,13 @@ span.pancake-radio + * {
   background: rgba(0, 0, 0, 0.25);
 }
 .pancake-steps-item-wait > .pancake-steps-item-container > .pancake-steps-item-content > .pancake-steps-item-title {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-steps-item-wait > .pancake-steps-item-container > .pancake-steps-item-content > .pancake-steps-item-title::after {
   background-color: rgba(0, 0, 0, 0.06);
 }
 .pancake-steps-item-wait > .pancake-steps-item-container > .pancake-steps-item-content > .pancake-steps-item-description {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-steps-item-wait > .pancake-steps-item-container > .pancake-steps-item-tail::after {
   background-color: rgba(0, 0, 0, 0.06);
@@ -20924,13 +20970,13 @@ span.pancake-radio + * {
   background: var(--pancake-primary-color);
 }
 .pancake-steps-item-process > .pancake-steps-item-container > .pancake-steps-item-content > .pancake-steps-item-title {
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
 }
 .pancake-steps-item-process > .pancake-steps-item-container > .pancake-steps-item-content > .pancake-steps-item-title::after {
   background-color: rgba(0, 0, 0, 0.06);
 }
 .pancake-steps-item-process > .pancake-steps-item-container > .pancake-steps-item-content > .pancake-steps-item-description {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-steps-item-process > .pancake-steps-item-container > .pancake-steps-item-tail::after {
   background-color: rgba(0, 0, 0, 0.06);
@@ -20955,13 +21001,13 @@ span.pancake-radio + * {
   background: var(--pancake-primary-color);
 }
 .pancake-steps-item-finish > .pancake-steps-item-container > .pancake-steps-item-content > .pancake-steps-item-title {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-steps-item-finish > .pancake-steps-item-container > .pancake-steps-item-content > .pancake-steps-item-title::after {
   background-color: var(--pancake-primary-color);
 }
 .pancake-steps-item-finish > .pancake-steps-item-container > .pancake-steps-item-content > .pancake-steps-item-description {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-steps-item-finish > .pancake-steps-item-container > .pancake-steps-item-tail::after {
   background-color: var(--pancake-primary-color);
@@ -21075,7 +21121,7 @@ span.pancake-radio + * {
   top: 12px;
 }
 .pancake-steps-small .pancake-steps-item-description {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
 }
 .pancake-steps-small .pancake-steps-item-tail {
@@ -21541,7 +21587,7 @@ span.pancake-radio + * {
 .pancake-switch {
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -21850,7 +21896,7 @@ span.pancake-radio + * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-variant: tabular-nums;
   line-height: 1.5715;
   list-style: none;
@@ -21901,12 +21947,12 @@ span.pancake-radio + * {
 }
 .pancake-table-footer {
   padding: 16px 16px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   background: #fafafa;
 }
 .pancake-table-thead > tr > th {
   position: relative;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 500;
   text-align: left;
   background: #fafafa;
@@ -22081,7 +22127,7 @@ td.pancake-table-column-sort {
   transition: all 0.3s;
 }
 .pancake-table-filter-trigger:hover {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   background: rgba(0, 0, 0, 0.04);
 }
 .pancake-table-filter-trigger.active {
@@ -22091,7 +22137,7 @@ td.pancake-table-column-sort {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -22809,7 +22855,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -22845,7 +22891,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   margin: 0;
   padding: 5px 12px;
   overflow: hidden;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -22861,7 +22907,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
 .pancake-tabs-dropdown-menu-item-remove {
   flex: none;
   margin-left: 12px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 12px;
   background: transparent;
   border: 0;
@@ -22944,7 +22990,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -23074,7 +23120,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   flex: none;
   margin-right: -4px;
   margin-left: 8px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 12px;
   background: transparent;
   border: none;
@@ -23083,7 +23129,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   transition: all 0.3s;
 }
 .pancake-tabs-tab-remove:hover {
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
 }
 .pancake-tabs-tab:hover {
   color: var(--pancake-primary-5);
@@ -23132,7 +23178,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -23154,7 +23200,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
 .pancake-tag,
 .pancake-tag a,
 .pancake-tag a:hover {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-tag > a:first-child:last-child {
   display: inline-block;
@@ -23163,13 +23209,13 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
 }
 .pancake-tag-close-icon {
   margin-left: 3px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 10px;
   cursor: pointer;
   transition: all 0.3s;
 }
 .pancake-tag-close-icon:hover {
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
 }
 .pancake-tag-has-color {
   border-color: transparent;
@@ -23373,7 +23419,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
 }
 .pancake-timeline {
   box-sizing: border-box;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -23607,7 +23653,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -23951,7 +23997,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -23985,7 +24031,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   align-items: center;
   height: 40px;
   padding: 6px 12px 7px;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 2px 2px 0 0;
@@ -24219,7 +24265,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -24342,7 +24388,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -24377,7 +24423,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -24430,7 +24476,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -24683,7 +24729,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -24806,7 +24852,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -24841,7 +24887,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -24909,7 +24955,7 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -25140,11 +25186,11 @@ tr.pancake-table-expanded-row .pancake-descriptions-view table {
   transform: scaleY(-1);
 }
 .pancake-typography {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   overflow-wrap: break-word;
 }
 .pancake-typography.pancake-typography-secondary {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-typography.pancake-typography-success {
   color: var(--pancake-success-color);
@@ -25176,7 +25222,7 @@ div.pancake-typography-h1,
 div.pancake-typography-h1 > textarea,
 .pancake-typography h1 {
   margin-bottom: 0.5em;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 600;
   font-size: 44px;
   line-height: 1.23;
@@ -25186,7 +25232,7 @@ div.pancake-typography-h2,
 div.pancake-typography-h2 > textarea,
 .pancake-typography h2 {
   margin-bottom: 0.5em;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 600;
   font-size: 35px;
   line-height: 1.35;
@@ -25196,7 +25242,7 @@ div.pancake-typography-h3,
 div.pancake-typography-h3 > textarea,
 .pancake-typography h3 {
   margin-bottom: 0.5em;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 600;
   font-size: 28px;
   line-height: 1.35;
@@ -25206,7 +25252,7 @@ div.pancake-typography-h4,
 div.pancake-typography-h4 > textarea,
 .pancake-typography h4 {
   margin-bottom: 0.5em;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 600;
   font-size: 23px;
   line-height: 1.4;
@@ -25216,7 +25262,7 @@ div.pancake-typography-h5,
 div.pancake-typography-h5 > textarea,
 .pancake-typography h5 {
   margin-bottom: 0.5em;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-weight: 600;
   font-size: 19px;
   line-height: 1.5;
@@ -25400,7 +25446,7 @@ div.pancake-typography-edit-content {
   position: absolute;
   right: 10px;
   bottom: 8px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-weight: normal;
   font-size: 16px;
   font-style: normal;
@@ -25505,7 +25551,7 @@ div.pancake-typography-edit-content.pancake-typography-rtl {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   line-height: 1.5715;
@@ -25597,11 +25643,11 @@ div.pancake-typography-edit-content.pancake-typography-rtl {
 }
 .pancake-upload.pancake-upload-drag p.pancake-upload-text {
   margin: 0 0 4px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(118, 69, 217, 0.85);
   font-size: 18px;
 }
 .pancake-upload.pancake-upload-drag p.pancake-upload-hint {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
 }
 .pancake-upload.pancake-upload-drag .anticon-plus {
@@ -25610,10 +25656,10 @@ div.pancake-typography-edit-content.pancake-typography-rtl {
   transition: all 0.3s;
 }
 .pancake-upload.pancake-upload-drag .anticon-plus:hover {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-upload.pancake-upload-drag:hover .anticon-plus {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
 }
 .pancake-upload-picture-card-wrapper {
   display: inline-block;
@@ -25641,7 +25687,7 @@ div.pancake-typography-edit-content.pancake-typography-rtl {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
   font-size: 16px;
   font-variant: tabular-nums;
   list-style: none;
@@ -25702,11 +25748,11 @@ div.pancake-typography-edit-content.pancake-typography-rtl {
   opacity: 1;
 }
 .pancake-upload-list-item-card-actions .anticon {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   transition: all 0.3s;
 }
 .pancake-upload-list-item-card-actions:hover .anticon {
-  color: #7a6eaa;
+  color: rgba(122, 110, 170, 0.85);
 }
 .pancake-upload-list-item-info {
   height: 100%;
@@ -25721,7 +25767,7 @@ div.pancake-typography-edit-content.pancake-typography-rtl {
 .pancake-upload-list-item-info .pancake-upload-text-icon .anticon {
   position: absolute;
   top: 6px;
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(122, 110, 170, 0.45);
   font-size: 16px;
 }
 .pancake-upload-list-item:hover .pancake-upload-list-item-info {

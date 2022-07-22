@@ -9,3 +9,34 @@ html {
 html body #root .App {
   min-height: 100vh;
 }
+
+/* pancake start */
+.pancake-menu {
+  font-weight: 500;
+}
+
+.pancake-menu-submenu-selected,
+.pancake-menu-item-selected {
+  /* font-weight: 790; */
+
+  font-weight: 700;
+}
+
+.pancake-menu-submenu-popup {
+  width: 28rem;
+}
+
+.pancake-menu-submenu > .pancake-menu {
+  border-radius: 2rem;
+  border: 1px solid rgb(231 227 235);
+}
+
+.pancake-menu-item-active:hover {
+  background: rgb(239 244 245);
+}
+
+.pancake-menu-vertical .pancake-menu-item:not(:first-child) {
+  margin-top: 0;
+}
+
+/* pancake end... */

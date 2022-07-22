@@ -11,8 +11,18 @@ export const PanDropdown = styled(Dropdown)``;
 
 export const PanMenu = styled(Menu)`
   /* color: rgb(140, 110, 170); */
-  /* font-weight: 600; */
+  font-weight: 500;
   border-bottom: none;
+
+  > .pancake-menu-submenu-active:hover {
+    background: rgb(239, 244, 245);
+    /* cursor: pointer; */
+  }
+
+  > .pancake-menu-submenu {
+    border-radius: 2rem;
+    /* background: rgb(239, 244, 245); */
+  }
 
   /* > * > .pancake-menu-vertical > .pancake-menu-item {
     font-weight: 600 !important;
@@ -66,7 +76,7 @@ export const PanMenu = styled(Menu)`
 `;
 
 export const Nav = styled.div`
-  width: 35rem;
+  width: 34rem;
   /* > * > .pancake-menu-title-content {
     font-weight: 600;
   } */
@@ -88,7 +98,7 @@ export const Header = styled(Row)`
   padding: 0rem 1.6rem;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
   /* z-index: 1; */
-  /* background-color: antiquewhite; */
+  /* background-color: rgb(255, 255, 255); */
 `;
 export const HeaderLeft = styled(Row)`
   background-color: azure;
