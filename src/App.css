@@ -39,4 +39,8 @@ html body #root .App {
   margin-top: 0;
 }
 
+.pancake-menu-vertical .pancake-menu-item:not(:last-child) {
+  margin-bottom: 0;
+}
+
 /* pancake end... */

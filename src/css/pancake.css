@@ -1,9 +1,4 @@
-/* stylelint-disable no-invalid-position-at-import-rule */
-/* stylelint-disable at-rule-no-unknown */
-/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
-/* stylelint-disable no-duplicate-selectors */
-/* stylelint-disable */
-/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+
 html {
   --pancake-primary-color: #1890ff;
   --pancake-primary-color-hover: #40a9ff;

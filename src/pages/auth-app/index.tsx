@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import styled from '@emotion/styled';
-import { Row } from 'components/lib';
-import { ReactComponent as Logo } from 'assets/pancake/logo.svg';
 import { ReactComponent as LogoText } from 'assets/pancake/logo.text.svg';
-import { SettingOutlined, MailOutlined, LogoutOutlined } from '@ant-design/icons';
+import { ReactComponent as Icon } from 'assets/pancake/icon.svg';
+import { SearchOutlined } from '@ant-design/icons';
 
 import { Button, Dropdown, Menu, MenuProps } from 'antd';
 import { useAuth } from 'pages/context/auth-context';
@@ -61,6 +59,14 @@ const PageHeader = () => {
         </Nav>
       </HeaderLeft>
       <HeaderRight>
+        <Button type='default' style={{ height: '50px' }}>
+          <Icon width={'24px'} />
+          $3.436
+        </Button>
+        <Button type='link' icon={<SearchOutlined />}>
+          Search
+        </Button>
+
         <User />
       </HeaderRight>
     </Header>

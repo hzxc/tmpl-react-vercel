@@ -84,7 +84,7 @@ export const Nav = styled.div`
 
 export const Container = styled.div`
   display: grid;
-  grid-template-rows: 5.4rem 1fr;
+  grid-template-rows: 5.6rem 1fr;
   grid-template-columns: 1fr;
   grid-template-areas:
     'header'
@@ -96,14 +96,16 @@ export const Header = styled(Row)`
   grid-area: header;
   align-items: center;
   padding: 0rem 1.6rem;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1); */
+  border-bottom: 1px solid rgb(231, 227, 235);
+  /* background-color: antiquewhite; */
   /* z-index: 1; */
   /* background-color: rgb(255, 255, 255); */
 `;
 export const HeaderLeft = styled(Row)`
-  background-color: azure;
+  /* background-color: azure; */
 `;
-export const HeaderRight = styled.div`
+export const HeaderRight = styled(Row)`
   /* background-color: royalblue; */
 `;
 export const Main = styled.main`
