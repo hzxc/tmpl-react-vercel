@@ -2,9 +2,9 @@
 
 ## variable.less path
 
-D:/proj/hzxc.github.com/tmpl-react-vercel/node_modules/antd/lib/style/themes
+`/node_modules/antd/lib/style/themes/variable.less`
 
-### pancake
+## pancake edit css
 
 ```css
 .pancake-menu-horizontal:not(.pancake-menu-dark) > .pancake-menu-submenu-selected::after {
@@ -14,4 +14,7 @@ D:/proj/hzxc.github.com/tmpl-react-vercel/node_modules/antd/lib/style/themes
 
 ## lessc
 
+```shell
+lessc --js --modify-var="ant-prefix=pancake" themes/pancake/pancake.less src/css/pancake.css
 lessc --js --modify-var="ant-prefix=pancake" node_modules/antd/dist/antd.variable.less src/css/pancake.css
+```
