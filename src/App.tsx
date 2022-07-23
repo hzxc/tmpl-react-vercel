@@ -16,7 +16,7 @@ function App() {
 
   return (
     <ConfigProvider prefixCls={prefixCls}>
-      <div className='App'>
+      <div className={`App ${prefixCls}`}>
         {/* UNDO */}
         {/* <ErrorBoundary fallbackRender={ FullPageErrorFallback }></ErrorBoundary> */}
         <React.Suspense fallback={<FullPageLoading />}>

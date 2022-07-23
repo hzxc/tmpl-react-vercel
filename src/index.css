@@ -1,6 +1,7 @@
 @import 'antd/dist/antd.variable.min.css';
-@import 'antd/dist/antd.css';
+@import 'css/ant.css';
 @import 'css/pancake.css';
+@import 'css/ant-dark.css';
 
 body {
   margin: 0;

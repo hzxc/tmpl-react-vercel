@@ -105,6 +105,7 @@ export const TestDynamicTheme = () => {
         <Title level={2}>Change Theme:</Title>
         <Radio.Group onChange={handlePrefixChange} value={prefix}>
           <Radio value='ant'>Ant Style</Radio>
+          <Radio value='ant-dark'>Ant Dark Style</Radio>
           <Radio value='pancake'>Pancake Style</Radio>
         </Radio.Group>
       </Space>
