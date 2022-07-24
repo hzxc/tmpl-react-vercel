@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ReactComponent as LogoText } from 'assets/pancake/logo.text.svg';
-import { ReactComponent as Icon } from 'assets/pancake/icon.svg';
 import { SearchOutlined } from '@ant-design/icons';
 
 import { Button, Dropdown, Menu, MenuProps } from 'antd';
@@ -14,6 +13,8 @@ import { Link } from 'react-router-dom';
 import { AuthNavItems } from 'consts';
 
 import { Container, Main, Header, HeaderLeft, HeaderRight, Nav, PanMenu } from './index.style';
+import { PancakeIcon } from 'components/pancake-icon';
+
 function AuthApp() {
   return (
     <Container>
@@ -59,14 +60,17 @@ const PageHeader = () => {
         </Nav>
       </HeaderLeft>
       <HeaderRight>
-        <Button type='default' style={{ height: '50px' }}>
-          <Icon width={'24px'} />
+        <Button
+          className='iconBtn'
+          type='link'
+          icon={<PancakeIcon style={{ verticalAlign: 'top', fontSize: '24px' }} />}
+          style={{ fontWeight: '600', color: 'rgb(122, 110, 170)' }}
+        >
           $3.436
         </Button>
         <Button type='link' icon={<SearchOutlined />}>
           Search
         </Button>
-
         <User />
       </HeaderRight>
     </Header>
